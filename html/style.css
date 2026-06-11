@@ -766,6 +766,13 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
   gap: 48px;
   align-items: start;
 }
+.cd-text {
+    background-color: #e3f2fd; 
+    color:#0d47a1; 
+    border: 1px solid #bbdefb;
+    border-radius: 12px;
+    padding: 20px;
+}
 .contact-info h2 { color: var(--navy); margin-bottom: 14px; }
 .contact-info p { color: var(--text-l); margin-bottom: 32px; }
 .contact-details { display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px; }
