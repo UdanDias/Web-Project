@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #fcfaf2; /* Soft Cream */
+  background-color: #fcfaf2; 
   color: #2c2520;
   line-height: 1.6;
   padding: 40px 20px;
@@ -26,7 +26,6 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-/* Clearfix: Keeps the parent container from collapsing due to floats */
 .vintage-hero-inner::after {
   content: "";
   display: table;
@@ -39,19 +38,17 @@ body {
 .hero-left-col {
   float: left;
   width: 45%;      
-  height: 580px; /* Fixed height so both columns match */
+  /* Changed to match the dynamic height of the right content column */
+  min-height: 620px; 
   background-size: cover;
   background-position: center;
-  /* Animates 4 photos continuously over 12 seconds */
   animation: imageSlider 12s infinite; 
 }
 
-/* Hide the original static image so the shifting backgrounds show */
 .large-hero-img {
   display: none; 
 }
 
-/* Slideshow Timeline */
 @keyframes imageSlider {
   0%, 20% {
     background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000&auto=format&fit=crop');
@@ -76,13 +73,14 @@ body {
 .hero-right-col {
   float: left;
   width: 55%;      
-  height: 580px;   
+  /* Using min-height allows the box to expand if text grows */
+  min-height: 620px;   
   padding: 40px;
 }
 
 .main-title {
   font-size: 2.5rem;
-  color: #5c1d24; /* Deep Burgundy */
+  color: #5c1d24; 
   letter-spacing: 3px;
   margin-bottom: 20px;
   border-bottom: 2px solid #dfcbb5;
@@ -96,7 +94,7 @@ body {
 }
 
 /* ==========================================
-   5. BOTTOM SUB-ROW (Badge & Thumbnail)
+   5. BOTTOM SUB-ROW (Cleaned Up Badge Text)
    ========================================== */
 .details-row::after {
   content: "";
@@ -106,13 +104,12 @@ body {
 
 .badge-and-text {
   float: left;
-  width: 65%;
-  padding-right: 15px;
+  width: 100%; /* Spans full width now that image is gone */
 }
 
 .phone-badge {
   display: inline-block;
-  background-color: #2d4a43; /* Dark Green */
+  background-color: #2d4a43; 
   color: #fcfaf2;
   padding: 6px 12px;
   font-weight: bold;
@@ -132,19 +129,6 @@ body {
   color: #7c6e61;
 }
 
-.thumbnail-wrapper {
-  float: right;
-  width: 35%;
-}
-
-.thumb-img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border: 3px solid #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 /* ==========================================
    6. RESPONSIVE SETUP (Mobile & Tablet)
    ========================================== */
@@ -152,9 +136,9 @@ body {
   .hero-left-col, .hero-right-col {
     float: none;
     width: 100%;
-    height: auto;
+    min-height: auto;
   }
   .hero-left-col {
-    height: 300px;
+    height: 350px;
   }
 }
