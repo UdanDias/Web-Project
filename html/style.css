@@ -835,6 +835,39 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
 .hours-table td { padding: 7px 0; border-bottom: 1px solid var(--border); color: var(--text-l); }
 .hours-table td:first-child { color: var(--text); font-weight: 500; }
 .hours-table tr:last-child td { border-bottom: none; }
+.hours-table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse; 
+    background-color: #ffffff; 
+    border: 1px solid #e2e8f0; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /
+}
+
+
+.hours-table td {
+    padding: 14px 18px; 
+    font-size: 0.9rem;
+    color: #4a5568;
+    border-bottom: 1px solid #edf2f7; 
+}
+
+
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.hours-table tr:hover {
+    background-color: #f7fafc;
+}
+
+
+.hours-table td:first-child {
+    font-weight: 600;
+    color: var(--navy); 
 
 .map-embed {
   border-radius: var(--radius);
