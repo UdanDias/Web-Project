@@ -585,58 +585,6 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
 .benefit-text strong { display: block; font-size: .88rem; color: var(--navy); }
 .benefit-text span { font-size: .8rem; color: var(--text-l); }
 
-.form-card {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 36px;
-  box-shadow: var(--shadow);
-}
-.form-card h3 { font-family: var(--ff-display); color: var(--navy); margin-bottom: 24px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
-.form-group label {
-  font-size: .78rem; font-weight: 600;
-  color: var(--text); text-transform: uppercase; letter-spacing: .05em;
-}
-.form-group input,
-.form-group select,
-.form-group textarea {
-  padding: 10px 14px;
-  border: 1.5px solid var(--border);
-  border-radius: 6px;
-  font-family: var(--ff-body);
-  font-size: .9rem;
-  color: var(--text);
-  background: var(--white);
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(30,58,95,.1);
-}
-.form-group input.error { border-color: #dc3545; }
-.form-group input.success { border-color: #28a745; }
-.field-error { font-size: .75rem; color: #dc3545; display: none; margin-top: 2px; }
-.field-error.show { display: block; }
-
-.strength-bar {
-  height: 4px;
-  border-radius: 2px;
-  background: var(--border);
-  margin-top: 6px;
-  overflow: hidden;
-}
-.strength-bar-fill { height: 100%; width: 0; border-radius: 2px; transition: all .3s; }
-.strength-text { font-size: .72rem; color: var(--text-l); margin-top: 4px; }
-
-.form-check { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 20px; }
-.form-check input[type="checkbox"] { margin-top: 3px; accent-color: var(--navy); }
-.form-check label { font-size: .85rem; color: var(--text-l); }
-.form-check a { color: var(--navy); text-decoration: underline; }
 
 /* ============================================================
    MY ACCOUNT PAGE
@@ -951,4 +899,3 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
   .stats-inner { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; }
   .hero-cta .btn { width: 100%; justify-content: center; }
-}
