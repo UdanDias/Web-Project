@@ -295,3 +295,46 @@ body {
 }
 .toast.show { transform: translateY(0); opacity: 1; }
 .toast-icon { color: var(--gold); font-size: 1.1rem; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .register-wrap { grid-template-columns: 1fr; }
+  .register-info { position: static; }
+  .account-grid { grid-template-columns: 1fr; }
+  .account-sidebar { position: static; }
+  .sidebar-nav { display: flex; flex-wrap: wrap; }
+  .sidebar-nav a { border-bottom: none; border-right: 1px solid var(--border); }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 52px 0; }
+  .nav-links, .nav-right #live-date { display: none; }
+  .hamburger { display: flex; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 66px; left: 0; right: 0;
+    background: var(--navy-d);
+    padding: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  }
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .stats-inner { grid-template-columns: 1fr 1fr; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .books-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .filter-bar { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .stats-inner { grid-template-columns: 1fr; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta .btn { width: 100%; justify-content: center; }
+}
