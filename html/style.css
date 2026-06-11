@@ -766,6 +766,14 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
   gap: 48px;
   align-items: start;
 }
+.side-img {
+    width: 25vw; 
+    height: auto; 
+    max-height: 450px; 
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 .cd-text {
     background-color: #e3f2fd; 
     color:#0d47a1; 
