@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — BibliOS Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="logo-icon">📚</div>
+      Bibli<span>OS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Book Catalog</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="account.html">My Account</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <span id="live-date"></span>
+      <a href="membership.html" class="btn btn-primary btn-sm">Join Free</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<div class="catalog-hero">
+  <div class="container">
+    <div class="section-label">We'd Love to Hear From You</div>
+    <h1>Contact Us</h1>
+    <p>Questions, feedback, or book suggestions — our team responds within 24 hours.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════ CONTACT SECTION ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="section-label">Get in Touch</div>
+        <h2>Visit, Call, or Write to Us</h2>
+        <p>Our librarians and support staff are here to help with anything — borrowing queries, account issues, or just a good book recommendation.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="cd-icon">📍</div>
+            <div class="cd-text">
+              <strong>Library Address</strong>
+              <span>42 Library Lane, Colombo 03,<br>Western Province, Sri Lanka</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cd-icon">📞</div>
+            <div class="cd-text">
+              <strong>Phone</strong>
+              <span>+94 11 234 5678 (Main)<br>+94 77 987 6543 (Support)</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cd-icon">✉️</div>
+            <div class="cd-text">
+              <strong>Email</strong>
+              <span>hello@biblios.lk (General)<br>support@biblios.lk (Technical)</span>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="cd-icon">🌐</div>
+            <div class="cd-text">
+              <strong>Website</strong>
+              <span>www.biblios.lk</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <h4 style="color:var(--navy); margin-bottom:12px;">🕐 Opening Hours</h4>
+        <table class="hours-table">
+          <tr><td>Monday – Friday</td><td>8:00 AM – 8:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM – 6:00 PM</td></tr>
+          <tr><td>Sunday</td><td>10:00 AM – 4:00 PM</td></tr>
+          <tr><td>Public Holidays</td><td style="color:#856404;">Closed</td></tr>
+        </table>
+
+        <!-- Map placeholder -->
+        <div class="map-embed">
+          <div class="map-placeholder">
+            <div class="map-pin">📍</div>
+            <strong>BibliOS Library</strong>
+            <p>42 Library Lane, Colombo 03</p>
+            <p style="font-size:.78rem;">🗺️ Google Maps integration</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="form-card">
+        <h3>📬 Send Us a Message</h3>
+        <p style="color:var(--text-l); font-size:.875rem; margin-bottom:24px; margin-top:-8px;">
+          Fill in the form below and we'll get back to you as soon as possible.
+        </p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c-name">Your Name *</label>
+              <input type="text" id="c-name" placeholder="Saman Kumara" autocomplete="name" />
+              <span class="field-error" id="c-name-err"></span>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address *</label>
+              <input type="email" id="c-email" placeholder="you@example.com" autocomplete="email" />
+              <span class="field-error" id="c-email-err"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="c-subject">Subject *</label>
+            <input type="text" id="c-subject" placeholder="e.g. Question about borrowing limits" />
+            <span class="field-error" id="c-subject-err"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="c-category">Category</label>
+            <select id="c-category">
+              <option value="">— Select topic —</option>
+              <option value="general">General Inquiry</option>
+              <option value="account">Account / Membership</option>
+              <option value="borrow">Borrowing & Returns</option>
+              <option value="technical">Technical Support</option>
+              <option value="suggestion">Book Suggestion</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="c-msg">Message *</label>
+            <textarea id="c-msg" rows="6" placeholder="Write your message here…" style="resize:vertical;"></textarea>
+            <span class="field-error" id="c-msg-err"></span>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="c-copy" />
+            <label for="c-copy">Send me a copy of this message</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:13px; font-size:.95rem;">
+            📤 Send Message
+          </button>
+        </form>
+
+        <!-- Response time info -->
+        <div style="margin-top:20px; background:var(--light); border-radius:8px; padding:16px; display:flex; gap:12px; align-items:flex-start;">
+          <div style="font-size:1.4rem;">⏱️</div>
+          <div>
+            <strong style="font-size:.85rem; color:var(--navy);">Typical response time</strong>
+            <p style="font-size:.8rem; color:var(--text-l); margin-top:3px;">We usually reply within <strong>4–8 hours</strong> on weekdays, and within 24 hours on weekends.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FAQ STRIP ═══════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:36px;">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div style="max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+      <div class="accordion-item">
+        <button class="accordion-header">How do I borrow a book online? <span class="accordion-arrow">▼</span></button>
+        <div class="accordion-body">Sign in to your account, browse or search the catalog, click <em>Borrow Book</em> on any available title, and it will appear in your borrowed list immediately. You can borrow up to 5 books at once on a Standard membership.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">What happens if I return a book late? <span class="accordion-arrow">▼</span></button>
+        <div class="accordion-body">BibliOS does not charge late fees. However, accounts with overdue books for more than 30 days will have borrowing privileges paused until the book is returned.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">Can I suggest a book for the library? <span class="accordion-arrow">▼</span></button>
+        <div class="accordion-body">Absolutely! Use the contact form above, select <em>Book Suggestion</em> as the category, and tell us the title, author, and ISBN if you have it. Our acquisitions team reviews every suggestion.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">How do I upgrade my membership? <span class="accordion-arrow">▼</span></button>
+        <div class="accordion-body">Go to <a href="account.html" style="color:var(--navy);">My Account → Settings</a> and select <em>Upgrade Plan</em>. Premium membership costs LKR 500/month and allows unlimited borrowing with priority queue access.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="nav-logo" style="margin-bottom:14px;"><div class="logo-icon">📚</div>Bibli<span>OS</span></div>
+        <p>Sri Lanka's premier online library management platform.</p>
+        <div class="footer-social"><a href="#">f</a><a href="#">𝕏</a><a href="#">📷</a><a href="#">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="books.html">Book Catalog</a></li><li><a href="membership.html">Membership</a></li><li><a href="account.html">My Account</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+      </div>
+      <div class="footer-col"><h4>Categories</h4>
+        <ul><li><a href="#">Fiction & Literature</a></li><li><a href="#">Science & Technology</a></li><li><a href="#">History & Politics</a></li><li><a href="#">Children's Books</a></li><li><a href="#">Academic Journals</a></li></ul>
+      </div>
+      <div class="footer-col"><h4>Contact</h4>
+        <p>📍 42 Library Lane, Colombo 03</p>
+        <p style="margin-top:8px;">📞 +94 11 234 5678</p>
+        <p style="margin-top:8px;">✉️ hello@biblios.lk</p>
+        <p style="margin-top:8px;">🕐 Mon–Sat: 8 AM – 8 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> BibliOS Library. All rights reserved.</span>
+      <span>Built with ❤️ for knowledge seekers</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script>
+  // FAQ accordion on contact page
+  $(function () {
+    $('.accordion-header').on('click', function () {
+      const isOpen = $(this).hasClass('open');
+      $('.accordion-header').removeClass('open');
+      $('.accordion-body').removeClass('open');
+      if (!isOpen) {
+        $(this).addClass('open');
+        $(this).next('.accordion-body').addClass('open');
+      }
+    });
+  });
+</script>
+</body>
+</html>

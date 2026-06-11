@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership Registration — BibliOS Library</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="logo-icon">📚</div>
+      Bibli<span>OS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Book Catalog</a></li>
+      <li><a href="membership.html" class="active">Membership</a></li>
+      <li><a href="account.html">My Account</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <span id="live-date"></span>
+      <a href="membership.html" class="btn btn-primary btn-sm">Join Free</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ PAGE HEADER ═══════════════════ -->
+<div class="catalog-hero">
+  <div class="container">
+    <div class="section-label">Join BibliOS</div>
+    <h1>Create Your Free Account</h1>
+    <p>Unlimited access to thousands of books. Register in under 2 minutes.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════ REGISTRATION SECTION ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="register-wrap">
+
+      <!-- Info Panel -->
+      <div class="register-info">
+        <div class="section-label">Member Benefits</div>
+        <h2>Everything you get, for free</h2>
+        <p>All BibliOS memberships are completely free. No hidden charges, no credit card required.</p>
+        <div class="benefit-list">
+          <div class="benefit-item">
+            <div class="benefit-icon">📚</div>
+            <div class="benefit-text">
+              <strong>Borrow up to 5 books at once</strong>
+              <span>Keep each book for up to 21 days with free renewals</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🔍</div>
+            <div class="benefit-text">
+              <strong>Full catalog search</strong>
+              <span>Search by title, author, ISBN, or keyword across 24,000+ titles</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">📱</div>
+            <div class="benefit-text">
+              <strong>Read on any device</strong>
+              <span>Mobile, tablet, desktop — your shelf travels with you</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🔔</div>
+            <div class="benefit-text">
+              <strong>New arrival alerts</strong>
+              <span>Get notified when books in your favourite genres arrive</span>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">⭐</div>
+            <div class="benefit-text">
+              <strong>Reserve upcoming titles</strong>
+              <span>Join the queue for popular books before they're available</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Membership tiers -->
+        <div style="margin-top:28px; background:var(--light); border-radius:10px; padding:20px;">
+          <h4 style="color:var(--navy); margin-bottom:12px; font-size:.9rem; text-transform:uppercase; letter-spacing:.06em;">Membership Types</h4>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; justify-content:space-between; font-size:.85rem; color:var(--text-l);">
+              <span>🟢 <strong style="color:var(--text);">Standard</strong></span>
+              <span>5 books, 21 days</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:.85rem; color:var(--text-l);">
+              <span>🔵 <strong style="color:var(--text);">Student</strong></span>
+              <span>8 books, 30 days</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:.85rem; color:var(--text-l);">
+              <span>🥇 <strong style="color:var(--text);">Premium</strong></span>
+              <span>Unlimited, priority queue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Registration Form -->
+      <div class="form-card">
+        <h3>📝 Registration Form</h3>
+        <form id="membership-form" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name *</label>
+              <input type="text" id="full-name" placeholder="Kavindu Perera" autocomplete="name" />
+              <span class="field-error" id="full-name-err"></span>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" />
+              <span class="field-error" id="dob-err"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+            <span class="field-error" id="email-err"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" placeholder="+94 77 123 4567" autocomplete="tel" />
+            <span class="field-error" id="phone-err"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Full Address *</label>
+            <input type="text" id="address" placeholder="123 Temple Road, Colombo 05, Sri Lanka" autocomplete="street-address" />
+            <span class="field-error" id="address-err"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="mem-type">Membership Type *</label>
+            <select id="mem-type">
+              <option value="0">— Select membership type —</option>
+              <option value="standard">Standard (Free)</option>
+              <option value="student">Student (Free with valid ID)</option>
+              <option value="premium">Premium (LKR 500/month)</option>
+            </select>
+            <span class="field-error" id="mem-type-err"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password *</label>
+              <input type="password" id="password" placeholder="Min. 8 characters" autocomplete="new-password" />
+              <div class="strength-bar"><div class="strength-bar-fill"></div></div>
+              <span class="strength-text">Enter a password</span>
+              <span class="field-error" id="password-err"></span>
+            </div>
+            <div class="form-group">
+              <label for="confirm-pw">Confirm Password *</label>
+              <input type="password" id="confirm-pw" placeholder="Repeat password" autocomplete="new-password" />
+              <span class="field-error" id="confirm-pw-err"></span>
+            </div>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> of BibliOS Library. *</label>
+          </div>
+          <span class="field-error" id="terms-err"></span>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:13px; font-size:.95rem; margin-top:6px;">
+            🎓 Create My Library Account
+          </button>
+
+          <p style="text-align:center; font-size:.8rem; color:var(--text-l); margin-top:14px;">
+            Already a member? <a href="account.html" style="color:var(--navy); font-weight:600;">Sign in to My Account →</a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="nav-logo" style="margin-bottom:14px;"><div class="logo-icon">📚</div>Bibli<span>OS</span></div>
+        <p>Sri Lanka's premier online library management platform.</p>
+        <div class="footer-social"><a href="#">f</a><a href="#">𝕏</a><a href="#">📷</a><a href="#">▶</a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="books.html">Book Catalog</a></li><li><a href="membership.html">Membership</a></li><li><a href="account.html">My Account</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+      </div>
+      <div class="footer-col"><h4>Categories</h4>
+        <ul><li><a href="#">Fiction & Literature</a></li><li><a href="#">Science & Technology</a></li><li><a href="#">History & Politics</a></li><li><a href="#">Children's Books</a></li><li><a href="#">Academic Journals</a></li></ul>
+      </div>
+      <div class="footer-col"><h4>Contact</h4>
+        <p>📍 42 Library Lane, Colombo 03</p>
+        <p style="margin-top:8px;">📞 +94 11 234 5678</p>
+        <p style="margin-top:8px;">✉️ hello@biblios.lk</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> BibliOS Library. All rights reserved.</span>
+      <span>Built with ❤️ for knowledge seekers</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

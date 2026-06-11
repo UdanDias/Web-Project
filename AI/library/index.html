@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BibliOS — Online Library Management System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════ NAVBAR ═══════════════════ -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="logo-icon">📚</div>
+      Bibli<span>OS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="books.html">Book Catalog</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="account.html">My Account</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <span id="live-date"></span>
+      <a href="membership.html" class="btn btn-primary btn-sm">Join Free</a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Your Local Digital Library</div>
+      <h1>Discover Every<br><em>Story Ever Told</em></h1>
+      <p>Access over 24,000 books, journals, and digital resources — all from the comfort of your home. Free membership. No late fees.</p>
+      <div class="hero-cta">
+        <a href="membership.html" class="btn btn-primary">🎓 Get Free Membership</a>
+        <a href="books.html" class="btn btn-outline">Browse Catalog →</a>
+      </div>
+    </div>
+    <div class="hero-search">
+      <div class="search-bar">
+        <h3>🔍 Quick Book Search</h3>
+        <div class="search-row">
+          <input type="text" id="hero-search" placeholder="Title, author, or ISBN…" />
+          <a href="books.html" class="btn btn-primary">Search</a>
+        </div>
+        <div style="margin-top:14px; display:flex; gap:8px; flex-wrap:wrap;">
+          <a href="books.html?cat=fiction"  class="btn btn-sm btn-navy">Fiction</a>
+          <a href="books.html?cat=science"  class="btn btn-sm btn-navy">Science</a>
+          <a href="books.html?cat=history"  class="btn btn-sm btn-navy">History</a>
+          <a href="books.html?cat=children" class="btn btn-sm btn-navy">Children</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ STATS STRIP ═══════════════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="24658" data-suffix="+">0</span>
+        <span class="stat-label">Total Books</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="8312" data-suffix="+">0</span>
+        <span class="stat-label">Active Members</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="19440">0</span>
+        <span class="stat-label">Available Now</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="42">0</span>
+        <span class="stat-label">Categories</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ FEATURED BOOKS (Slider) ═══════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:36px;">
+      <div class="section-label">Editor's Picks</div>
+      <h2 class="section-title">Featured This Month</h2>
+      <p class="section-sub">Hand-curated selections across every genre, updated weekly by our librarians.</p>
+    </div>
+
+    <div class="slider-wrap">
+      <div class="slider">
+        <div class="slide">
+          <div class="slide-bg">📖</div>
+          <div class="slide-content">
+            <div class="slide-tag">⭐ New Arrival</div>
+            <h3>The Midnight Library</h3>
+            <p>Matt Haig &nbsp;·&nbsp; Fiction &nbsp;·&nbsp; 304 pages &nbsp;·&nbsp; Available</p>
+          </div>
+        </div>
+        <div class="slide" style="background:linear-gradient(120deg,#3d1a6b,#6d3a9c);">
+          <div class="slide-bg">🔭</div>
+          <div class="slide-content">
+            <div class="slide-tag">🔥 Most Borrowed</div>
+            <h3>A Brief History of Time</h3>
+            <p>Stephen Hawking &nbsp;·&nbsp; Science &nbsp;·&nbsp; 212 pages &nbsp;·&nbsp; Available</p>
+          </div>
+        </div>
+        <div class="slide" style="background:linear-gradient(120deg,#1a6b3a,#27a463);">
+          <div class="slide-bg">🌿</div>
+          <div class="slide-content">
+            <div class="slide-tag">💚 Recommended</div>
+            <h3>The Great Alone</h3>
+            <p>Kristin Hannah &nbsp;·&nbsp; Drama &nbsp;·&nbsp; 448 pages &nbsp;·&nbsp; Available</p>
+          </div>
+        </div>
+        <div class="slide" style="background:linear-gradient(120deg,#7d3224,#c14e37);">
+          <div class="slide-bg">🏛️</div>
+          <div class="slide-content">
+            <div class="slide-tag">📜 Classic</div>
+            <h3>Sapiens: A Brief History</h3>
+            <p>Yuval Noah Harari &nbsp;·&nbsp; History &nbsp;·&nbsp; 443 pages &nbsp;·&nbsp; Available</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev" aria-label="Previous">&#8249;</button>
+      <button class="slider-btn next" aria-label="Next">&#8250;</button>
+    </div>
+    <div class="slider-dots">
+      <div class="slider-dot active"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+      <div class="slider-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ NEW ARRIVALS ═══════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:36px;">
+      <div class="section-label">Just Added</div>
+      <h2 class="section-title">New Arrivals</h2>
+      <p class="section-sub">Fresh titles added to our shelves this week.</p>
+    </div>
+    <div class="books-grid">
+      <!-- Card 1 -->
+      <div class="book-card">
+        <div class="book-cover book-cover-c1">📘<span class="badge badge-available">Available</span></div>
+        <div class="book-info">
+          <h4>Atomic Habits</h4>
+          <p class="author">James Clear</p>
+          <span class="genre-tag">Self-Help</span>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="book-card">
+        <div class="book-cover book-cover-c2">🔮<span class="badge badge-available">Available</span></div>
+        <div class="book-info">
+          <h4>Project Hail Mary</h4>
+          <p class="author">Andy Weir</p>
+          <span class="genre-tag">Sci-Fi</span>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="book-card">
+        <div class="book-cover book-cover-c3">🌱<span class="badge badge-borrowed">Borrowed</span></div>
+        <div class="book-info">
+          <h4>Braiding Sweetgrass</h4>
+          <p class="author">Robin Kimmerer</p>
+          <span class="genre-tag">Nature</span>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="book-card">
+        <div class="book-cover book-cover-c4">🔥<span class="badge badge-available">Available</span></div>
+        <div class="book-info">
+          <h4>Demon Copperhead</h4>
+          <p class="author">Barbara Kingsolver</p>
+          <span class="genre-tag">Fiction</span>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="book-card">
+        <div class="book-cover book-cover-c5">⚡<span class="badge badge-available">Available</span></div>
+        <div class="book-info">
+          <h4>Tomorrow, Tomorrow</h4>
+          <p class="author">Paul Tremblay</p>
+          <span class="genre-tag">Thriller</span>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:36px;">
+      <a href="books.html" class="btn btn-navy">View All Books →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CTA BANNER ═══════════════════ -->
+<section style="background: linear-gradient(135deg, var(--navy), var(--navy-l)); padding: 64px 0; color: var(--white); text-align:center;">
+  <div class="container">
+    <div class="section-label" style="background:rgba(248,180,0,.2); color:var(--gold);">Free Forever</div>
+    <h2 style="color:var(--white); margin: 12px 0;">Join 8,000+ Readers Today</h2>
+    <p style="color:rgba(255,255,255,.7); margin-bottom:28px; max-width:480px; margin-left:auto; margin-right:auto;">
+      Create your free library account in under 2 minutes. Borrow up to 5 books at a time, no credit card required.
+    </p>
+    <a href="membership.html" class="btn btn-primary" style="font-size:1rem; padding:14px 32px;">Create Free Account</a>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="nav-logo" style="margin-bottom:14px;">
+          <div class="logo-icon">📚</div>
+          Bibli<span>OS</span>
+        </div>
+        <p>Sri Lanka's premier online library management platform. Connecting readers with knowledge since 2020.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Book Catalog</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="account.html">My Account</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="books.html">Fiction & Literature</a></li>
+          <li><a href="books.html">Science & Technology</a></li>
+          <li><a href="books.html">History & Politics</a></li>
+          <li><a href="books.html">Children's Books</a></li>
+          <li><a href="books.html">Academic Journals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 42 Library Lane, Colombo 03, Sri Lanka</p>
+        <p style="margin-top:8px;">📞 +94 11 234 5678</p>
+        <p style="margin-top:8px;">✉️ hello@biblios.lk</p>
+        <p style="margin-top:8px;">🕐 Mon–Sat: 8 AM – 8 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> BibliOS Library. All rights reserved.</span>
+      <span>Built with ❤️ for knowledge seekers</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
