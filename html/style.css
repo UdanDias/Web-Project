@@ -879,6 +879,7 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
   gap: 48px;
   align-items: start;
 }
+
 .cd-text {
     background-color: #e3f2fd; 
     color:#0d47a1; 
@@ -891,6 +892,41 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
     margin-bottom: 15px;
     padding: 15px;       
     border-radius: 8px;
+}
+.main-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.left-section {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.right-section-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+
+.form-row-two-columns {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row-two-columns .form-group {
+    flex: 1; 
 }
 .contact-info h2 { color: var(--navy); margin-bottom: 14px; }
 .contact-info p { color: var(--text-l); margin-bottom: 32px; }
@@ -912,6 +948,39 @@ table.lib-table tbody tr:last-child td { border-bottom: none; }
 .hours-table td { padding: 7px 0; border-bottom: 1px solid var(--border); color: var(--text-l); }
 .hours-table td:first-child { color: var(--text); font-weight: 500; }
 .hours-table tr:last-child td { border-bottom: none; }
+.hours-table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse; 
+    background-color: #ffffff; 
+    border: 1px solid #e2e8f0; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /
+}
+
+
+.hours-table td {
+    padding: 14px 18px; 
+    font-size: 0.9rem;
+    color: #4a5568;
+    border-bottom: 1px solid #edf2f7; 
+}
+
+
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.hours-table tr:hover {
+    background-color: #f7fafc;
+}
+
+
+.hours-table td:first-child {
+    font-weight: 600;
+    color: var(--navy); 
 
 .map-embed {
   border-radius: var(--radius);
