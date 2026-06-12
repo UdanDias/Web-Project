@@ -409,12 +409,23 @@ body {
     align-items: stretch;
 }
 
+.page-wrapper-2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 32px;
+    padding: 36px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
 .books-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
 }
+
 
 .book-card {
     background: #fff;
@@ -618,7 +629,7 @@ body {
     align-items: center;
     gap: 12px;
     text-align: center;
-    position: sticky;
+    
     top: 64px;
     z-index: 99;
 }
@@ -650,3 +661,50 @@ body {
     margin: 0;
     line-height: 1.6;
 }
+
+
+
+/* .section-badge {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+} */
+.featured-intro {
+    padding: 36px 28px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fffbf0;
+    justify-content: center;
+    border-radius: 16px;
+    border: 1px solid rgba(134, 133, 132, 0.25);
+}
+
+.featured-intro h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #cbb71d !important;
+   
+    line-height: 1.2;
+    margin-top: 100px;
+
+}
+
+.featured-sub {
+    font-size: 1rem;
+    color: #5c5623;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 340px;
+}
+
+
+
