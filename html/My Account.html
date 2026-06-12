@@ -4,51 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
-     <link rel="stylesheet" href="html/style.css">
+    <title>My Account</title>
+     <link rel="stylesheet" href="../css/stylecontact.css">
 </head>
 <body>
-    <nav id="navbar">
-  <div class="container nav-inner">
-    <a class="nav-logo" href="index.html">
-      <div class="logo-icon">📚</div>
-      Bibli<span>OS</span>
-    </a>
-    <ul>
-    <li><a href="Index.html">Home</a></li>
-    <li><a href="Books.html">Book Catalog</a></li>
-    <li><a href="Membership.html"> Membership</a></li>
-    <li><a href="My Account.html">My Account</a></li>
-    <li><a href="Contact us.html">Contact Us</a></li>
-   </ul> 
-
-    <nav class="account-sidebar">
-        <div class="sidebar-nav">
-          <a href="#" class="active" data-target="panel-borrowed">📖 Borrowed Books</a><br>
-          <a href="#" data-target="panel-reserved">🔖 Reserved Books</a><br>
-          <a href="#" data-target="panel-history">📜 Reading History</a><br>
-          <a href="#" data-target="panel-profile">👤 Edit Profile</a><br>
-          <a href="#" data-target="panel-settings">⚙️ Settings</a><br>
-          <a href="index.html" style="color:#dc3545;">🚪 Sign Out</a>
+    <nav class="nav-container">
+    <div class="logo"><img src="../img/Logo4.png" alt="logo"></div>
+        <ul class="nav-items">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Books.html">Book Catalog</a></li>
+            <li><a href="Membership.html">Membership</a></li>
+            <li><a href="My Account.html">My Account</a></li>
+            <li><a href="Contact us.html">Contact Us</a></li>
+        </ul> 
+   </nav>
+   <div class="account-hero" style="background-color:#1a365d; color:white;">
+  <div class="container">
+    <div class="profile-header">
+      <div class="profile-details">
+        <h2>Amandi Perera</h2>
+        <p>amandiperera37@gmail.com &nbsp;·&nbsp; Member since January 2024</p>
+        <div class="profile-badges">
+          <span class="p-badge p-badge-gold">⭐ Premium Member</span>
+          <span class="p-badge p-badge-outline">📚 42 Books Read</span>
+          <span class="p-badge p-badge-outline">🏆 Top Reader</span>
         </div>
-    </nav>
-
-    <div class="account">
-    <div class="content-card account-panel" id="panel-borrowed">
-    <div class="card-header">
-        <h3>📖 Currently Borrowed</h3>
-        <span style="font-size:.8rem; color:var;">2 of 5 slots used</span>
+      </div>
     </div>
-        <div class="card-body" style="padding:0;">
-        <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+  </div>
+</div>
 
-    <table class="tble">
-        <tr>
-            <th style="width:40%; background-color:#1a365d; color:white;">Book</th>
-            <th style="width:18%; background-color:#1a365d; color:white;">Borrow Date</th>
-            <th style="width:18%; background-color:#1a365d; color:white;">Due Date</th>
-            <th style="width:12%; background-color:#1a365d; color:white;">Status</th>
-            <th style="width:12%; background-color:#1a365d; color:white;">Action</th>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" class="active" data-target="panel-borrowed">📖 Borrowed Books</a></li>
+                <li><a href="#" data-target="panel-reserved">🔖 Reserved Books</a></li>
+                <li><a href="#" data-target="panel-history">📜 Reading History</a></li>
+                <li><a href="#" data-target="panel-profile">👤 Edit Profile</a></li>
+                <li><a href="#" data-target="panel-settings">⚙️ Settings</a></li>
+                <a href="index.html" style="color:#dc3545;">🚪 Sign Out</a>
+            </ul>
+          </aside>
+
+        <main class="content">
+        <h3>📖 Currently Borrowed</h3>
+        
+    <table class="table1">
+        <tr style="background-color:#1a365d; color:white;">
+            <th style="width:40%;">Book</th>
+            <th style="width:18%;">Borrow Date</th>
+            <th style="width:18%;">Due Date</th>
+            <th style="width:12%;">Status</th>
+            <th style="width:12%;">Action</th>
         </tr>
         <tr>
             <td>
@@ -80,14 +87,14 @@
         </tr>
         </tr>
     </table>
-
-    <footer>
-      <div class="container">
-      <div class="footer-grid">
-      <div class="footer-col">
-      <div class="nav-logo" style="margin-bottom:14px;">
-      <div class="logo-icon">📚</div>Bibli<span>OS</span></div>
-         <p>Sri Lanka's premier online library management platform.</p>
+    </main>
+    </div>
+ <!--
+    <footer class="footer">
+      <div class="footer-top">
+      <div class="logo" style="margin-bottom:14px;">
+      <div class="logo"><img src="../img/Logo4.png" alt="logo"></div>
+        <p>Sri Lanka's premier online library management platform.</p>
       <div class="footer-social">
          <a href="#">f</a>
          <a href="#">𝕏</a>
@@ -119,15 +126,16 @@
             <h4>Contact</h4>
             <p>📍 42 Library Lane, Colombo 03</p>
             <p style="margin-top:8px;">📞 +94 11 234 5678</p>
-            <p style="margin-top:8px;">✉️ hello@biblios.lk</p>
+            <p style="margin-top:8px;">✉️ hello@vintagelb.lk</p>
       </div>
-      </div>
+      
       <div class="footer-bottom">
-            <span>© <span id="footer-year"></span> BibliOS Library. All rights reserved.</span>
-            <span>Built with ❤️ for knowledge seekers</span>
+            <p>© 2026 Vintage Library. All rights reserved.</p>
+            <p>Built with ❤️ for knowledge seekers</p>
       </div>
-      </div>
+      
     </footer>
+-->
     
 </body>
 </html>
