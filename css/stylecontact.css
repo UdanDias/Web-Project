@@ -409,12 +409,23 @@ body {
     align-items: stretch;
 }
 
+.page-wrapper-2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0;
+    padding: 36px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
 .books-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
 }
+
 
 .book-card {
     background: #fff;
@@ -649,4 +660,60 @@ body {
     color: #3a3a3a;
     margin: 0;
     line-height: 1.6;
+}
+
+
+
+.section-badge {
+    display: inline-block;
+    background-color: #c0392b;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+.featured-intro {
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #72706b;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(240, 165, 0, 0.2), 0 1px 6px rgba(240, 165, 0, 0.15);
+    border: 1px solid rgba(240, 165, 0, 0.25);
+}
+
+.featured-intro h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin: 0 0 14px 0;
+    line-height: 1.2;
+}
+
+.featured-sub {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    max-width: 340px;
+}
+
+.featured-divider {
+    width: 50px;
+    height: 4px;
+    background-color: #f0a500;
+    border-radius: 2px;
+    margin-bottom: 16px;
+}
+
+.featured-note {
+    font-size: 0.88rem;
+    color: #888;
+    font-style: italic;
 }
