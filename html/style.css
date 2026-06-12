@@ -90,7 +90,7 @@ body {
   width: 100%; /* Spans full width now that image is gone */
 }
 
-.phone-badge {
+.learn_more {
   display: inline-block;
   background-color: #2d4a43; 
   color: #fcfaf2;
