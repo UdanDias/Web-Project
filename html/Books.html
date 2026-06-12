@@ -3,57 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Books</title>
     <link rel="stylesheet" href="../css/stylecontact.css">
 </head>
 <body>
+
     <nav class="nav-container">
         <div class="logo">
             <img src="../img/Logo4.png" alt="logo">
-            
         </div>
-        
-            <ul class="nav-items">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Books.html">Books</a></li>
-                <li><a href="Membership.html">Membership</a></li>
-                <li><a href="My Account.html">My Account</a></li>
-                <li><a href="Contact us.html">Contact Us</a></li>
-            </ul>
+        <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Books.html">Books</a></li>
+            <li><a href="Membership.html">Membership</a></li>
+            <li><a href="My Account.html">My Account</a></li>
+            <li><a href="Contact us.html">Contact Us</a></li>
+        </ul>
     </nav>
-    theads=["Book Id","Title","Authoor",""]
 
-    <div class="two-column-container">
-        <div class="column-left">
-            <table class="my-table">
-            <thead>
-                <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-                <td>Data 3</td>
-                </tr>
-                <tr>
-                <td>Data 4</td>
-                <td>Data 5</td>
-                <td>Data 6</td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
+    <main class="page-wrapper">
 
-        <div class="column-right">
-            <img src="your-image.jpg" alt="Description" class="side-image">
-        </div>
-        </div>
-     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+        <section class="books-grid">
+
+            <div class="book-card" onclick="selectBook(this)"
+                data-title="Harry Potter and the Sorcerer's Stone"
+                data-author="J.K. Rowling"
+                data-text="Harry Potter is a young boy who discovers on his eleventh birthday that he is a wizard. He is invited to attend Hogwarts School of Witchcraft and Wizardry, where he learns about magic, makes friends, and uncovers the truth about the dark wizard who murdered his parents."
+                data-img="../img/HarryPotter1.jpg">
+                <img src="../img/HarryPotter1.jpg" alt="Harry Potter and the Sorcerer's Stone">
+                <div class="book-card-body">
+                    <h6>Harry Potter and the Sorcerer's Stone</h6>
+                    <p>A young boy discovers he's a wizard and begins his journey at Hogwarts.</p>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+
+            <div class="book-card" onclick="selectBook(this)"
+                data-title="Harry Potter and the Chamber of Secrets"
+                data-author="J.K. Rowling"
+                data-text="Harry Potter's second year at Hogwarts is marked by a series of mysterious attacks on students. A hidden chamber has been opened and a monster lurks within the school. Harry must uncover the secret of the Chamber of Secrets before more students are harmed."
+                data-img="../img/HarryPotter2.jpg">
+                <img src="../img/HarryPotter2.jpg" alt="Harry Potter and the Chamber of Secrets">
+                <div class="book-card-body">
+                    <h6>Harry Potter and the Chamber of Secrets</h6>
+                    <p>A hidden chamber is opened at Hogwarts, unleashing a terrifying monster.</p>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+
+            <div class="book-card" onclick="selectBook(this)"
+                data-title="Harry Potter and the Prisoner of Azkaban"
+                data-author="J.K. Rowling"
+                data-text="In his third year, Harry learns that a dangerous prisoner named Sirius Black has escaped from Azkaban and is believed to be hunting him. With the arrival of the mysterious Dementors at Hogwarts, Harry digs deeper into his past and uncovers shocking truths."
+                data-img="../img/harryPotter3.jpg">
+                <img src="../img/harryPotter3.jpg" alt="Harry Potter and the Prisoner of Azkaban">
+                <div class="book-card-body">
+                    <h6>Harry Potter and the Prisoner of Azkaban</h6>
+                    <p>A dangerous prisoner escapes Azkaban and is said to be after Harry.</p>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+
+            <div class="book-card" onclick="selectBook(this)"
+                data-title="Percy Jackson and the Lightning Thief"
+                data-author="Rick Riordan"
+                data-text="Percy Jackson is a troubled twelve-year-old who discovers he is the son of Poseidon, the Greek god of the sea. When Zeus's master lightning bolt is stolen, Percy is accused of the theft and must embark on a cross-country quest to find the real thief and prevent a war among the gods."
+                data-img="../img/PercyJackson1.jpg">
+                <img src="../img/PercyJackson1.jpg" alt="Percy Jackson and the Lightning Thief">
+                <div class="book-card-body">
+                    <h6>Percy Jackson and the Lightning Thief</h6>
+                    <p>A boy discovers he's a demigod and must stop a war between the Olympian gods.</p>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+
+            <div class="book-card" onclick="selectBook(this)"
+                data-title="Percy Jackson and the Sea of Monsters"
+                data-author="Rick Riordan"
+                data-text="Percy Jackson returns for his second year at Camp Half-Blood, only to find it under attack. To save the camp, Percy and his friends must venture into the Sea of Monsters — known to humans as the Bermuda Triangle — to retrieve the Golden Fleece."
+                data-img="../img/PercyJackson2.jpg">
+                <img src="../img/PercyJackson2.jpg" alt="Percy Jackson and the Sea of Monsters">
+                <div class="book-card-body">
+                    <h6>Percy Jackson and the Sea of Monsters</h6>
+                    <p>Percy must sail into the Sea of Monsters to save Camp Half-Blood.</p>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+
+            <div class="book-card" onclick="selectBook(this)"
+                data-title="Percy Jackson and the Titan's Curse"
+                data-author="Rick Riordan"
+                data-text="When the goddess Artemis goes missing, Percy and his friends join a quest to find her. The prophecy warns of a titan's curse, a difficult choice, and a sacrifice that will change Olympus forever. Percy must face his greatest challenge yet to save both gods and mortals."
+                data-img="../img/PercyJackson3.jpg">
+                <img src="../img/PercyJackson3.jpg" alt="Percy Jackson and the Titan's Curse">
+                <div class="book-card-body">
+                    <h6>Percy Jackson and the Titan's Curse</h6>
+                    <p>Percy races to rescue the goddess Artemis before a titan's curse destroys Olympus.</p>
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- RIGHT: Featured panel -->
+        <aside class="featured-panel">
+            <div class="featured-card">
+                <img src="..." alt="Select a book" id="featuredImg">
+                <div class="featured-body">
+                    <span class="featured-tag">Featured</span>
+                    <h2 id="featuredTitle">Select a Book</h2>
+                    <p class="featured-author" id="featuredAuthor">Click a card to preview</p>
+                    <p class="featured-desc" id="featuredText">Browse the collection on the left and click any book to see its full details here.</p>
+                    <div class="featured-actions">
+                        <a href="#" class="btn btn-large">Borrow</a>
+                        <a href="#" class="btn btn-outline">Add to Wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <script>
+        function selectBook(card) {
+            document.querySelectorAll('.book-card').forEach(c => c.classList.remove('selected'));
+            card.classList.add('selected');
+            document.getElementById('featuredImg').src        = card.dataset.img;
+            document.getElementById('featuredImg').alt        = card.dataset.title;
+            document.getElementById('featuredTitle').textContent  = card.dataset.title;
+            document.getElementById('featuredAuthor').textContent = card.dataset.author;
+            document.getElementById('featuredText').textContent   = card.dataset.text;
+        }
+    </script>
+
 </body>
 </html>
