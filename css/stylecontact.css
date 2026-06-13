@@ -407,55 +407,61 @@ body {
 }
 
 .nav-container {
-    background-color: #1a1235;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 50px;
-    height: 64px;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background-color: #1a1235 !important;
+    color: white!important;
+    display: flex!important;
+    justify-content: space-between!important;
+    align-items: center!important;
+    padding: 4px 50px!important;
+    height: 64px!important;
+    overflow: hidden!important;
+    position: sticky!important;
+    top: 0!important;
+    z-index: 100!important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3)!important;
+    overflow: visible !important;
+}
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 4px 20px !important;
+    }
 }
 
 .logo {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    height: 100%!important;
+    display: flex!important;
+    align-items: center!important;
 }
 
 .logo img {
-    height: 100%;
-    width: auto;
-    display: block;
-    object-fit: contain;
+    height: 100%!important;
+    width: auto!important;
+    display: block!important;
+    object-fit: contain!important;
 }
 
 .nav-items {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+    list-style: none!important;
+    display: flex!important;
+    gap: 30px!important;
 }
 .nav-item-container{
-  margin-left: 140px;
+  margin-left: 140px!important;
 }
 
 .nav-items a {
-    text-decoration: none;
-    color: #ccc;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 4px 0;
-    border-bottom: 2px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
+    text-decoration: none!important;
+    color: #ccc!important;
+    font-size: 20px!important;
+    font-weight: 500!important;
+    padding: 4px 0!important;
+    border-bottom: 2px solid transparent!important;
+    transition: color 0.2s, border-color 0.2s!important;
 }
 
 .nav-items a:hover {
-    color: #ffc107;
-    border-bottom-color: #ffc107;
+    color: #ffc107!important;
+    border-bottom-color: #ffc107!important;
 }
 
 

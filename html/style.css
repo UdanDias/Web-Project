@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -234,9 +234,9 @@ body {
   font-weight: normal;
   color: #4a3f35;
   text-align: justify;
-}
+} */
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   .logo, .nav-items {
     float: none;
     text-align: center;
@@ -260,14 +260,13 @@ body {
     padding: 30px 20px;
   }
 }
-/* --- New Arrivals Section Styles --- */
 .new-arrivals-section {
-  background-color: #fcfaf2; /* Updated to match the previous vintage page background */
+  background-color: #fcfaf2;
   padding: 60px 20px;
   border-top: 1px solid #e2d9c8;
   width: 100%;
   box-sizing: border-box;
-  clear: both; /* Prevents previous floated sections from breaking this layout */
+  clear: both; 
   font-family: 'Georgia';
 }
 
@@ -303,25 +302,23 @@ body {
   font-size: 15px;
   color: #7c6e61;
   font-family: 'Georgia';
-}
-
-/* Flexbox container for perfect side-by-side spacing without squishing */
+} */
+/* 
 .books-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px; /* Even spacing between your cards */
+  gap: 24px; 
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-/* Stretched, clean book cards */
 .book-card {
-  background-color: #ffffff; /* Flipped to white so cards pop out beautifully against the page background */
+  background-color: #ffffff; 
   border: 1px solid #e2d9c8;
-  width: 200px; /* Fixed robust horizontal width */
+  width: 200px; 
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
@@ -336,26 +333,19 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Colored placeholder layout */
 .book-cover {
-  height: 180px; /* Healthy vertical height ratio */
+  height: 180px; 
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 40px;
   position: relative;
-}
+} */
 
-/* Cover Background variations */
-.color-1 { background-color: #e3edf7; }
-.color-2 { background-color: #f3e5f5; }
-.color-3 { background-color: #e8f5e9; }
-.color-4 { background-color: #ffebee; }
-.color-5 { background-color: #fff3e0; }
 
-/* Fixed Status Badge styles */
-.badge {
+
+/* .badge {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -365,18 +355,17 @@ body {
   color: #ffffff;
   font-family: 'Georgia';
   font-weight: bold;
-}
+} */
 
-.status-available { background-color: #2d4a43; }
-.status-borrowed { background-color: #d94532; }
+/* .status-available { background-color: #2d4a43; }
+.status-borrowed { background-color: #d94532; } */
 
 /* Book details wrapper */
-.book-info {
+/* .book-info {
   padding: 15px 12px 5px 12px;
   box-sizing: border-box;
 }
 
-/* Title formatting fixing text clipping/thin columns */
 .book-info h4 {
   font-size: 16px;
   color: #2c2520;
@@ -384,7 +373,7 @@ body {
   font-family: 'Georgia';
   font-weight: bold;
   line-height: 1.4;
-  white-space: normal; /* Permits clean text wrapping */
+  white-space: normal; 
   overflow: visible;
 }
 
@@ -403,9 +392,8 @@ body {
   padding: 3px 10px;
   border-radius: 4px;
   font-family: 'Georgia';
-}
+} */
 
-/* Section footer button elements */
 .arrivals-footer {
   text-align: center;
   margin-top: 40px;
@@ -428,11 +416,7 @@ body {
   background-color: #1e332e;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+
 
 .main-container {
     display: flex;
