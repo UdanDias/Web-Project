@@ -183,9 +183,14 @@ h4 { font-size: 1rem; }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 48px;
+  grid-template-columns: 1fr 1.2fr 1.5fr; 
+  gap: 30px;
   align-items: start;
+  width: 100%;
+  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 .cd-text {
@@ -212,8 +217,9 @@ h4 { font-size: 1rem; }
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 36px;
+  padding: 30px;
   box-shadow: var(--shadow);
+  width: 100%; 
 }
 .form-card h3 { font-family: var(--ff-display); color: var(--navy); margin-bottom: 24px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
@@ -267,6 +273,69 @@ h4 { font-size: 1rem; }
 .hours-table tr:last-child td { border-bottom: none; }
 .hours-table tr:hover { background-color: #f7fafc; }
 .hours-table td:first-child { font-weight: 600; color: var(--navy); }
+
+/* FAQ Column Styling */
+.faq-container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-sizing: border-box;
+}
+
+.faq-container h3 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.accordion-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  padding: 14px 18px;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.accordion-header:hover { background: #f7fafc; }
+.accordion-header .icon { font-size: 1.1rem; color: #4a5568; }
+
+.accordion-body {
+  display: none;
+  padding: 0 18px 14px 18px;
+  border-top: 1px solid #edf2f7;
+}
+
+.accordion-body p {
+  color: #4a5568;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* responsive logic (Screen එක පොඩි වෙද්දි layout එක හරියන්න) */
+@media (max-width: 1200px) {
+  .contact-grid { grid-template-columns: 1fr 1.3fr; }
+  .faq-container { grid-column: span 2; margin-top: 20px; }
+}
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; padding: 0 20px; }
+  .faq-container { grid-column: span 1; }
+}
 
 /* Success toast */
 .toast {
