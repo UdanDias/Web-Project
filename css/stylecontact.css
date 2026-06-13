@@ -227,6 +227,8 @@ h4 { font-size: 1rem; }
   box-shadow: var(--shadow);
   width: 100%; 
   max-width: 750px; 
+  display: flex;
+  flex-direction: column;
 }
 .form-card h3 { font-family: var(--ff-display); color: var(--navy); margin-bottom: 24px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
