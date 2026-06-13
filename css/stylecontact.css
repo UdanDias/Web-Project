@@ -182,13 +182,14 @@ h4 { font-size: 1rem; }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 300px 1fr; 
-  gap: 120px;
+  grid-template-columns: 280px 1fr; 
+  gap: 10%; 
   align-items: start;
-  width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto;
-  padding: 0 20px;
+  
+  
+  width: 100vw;
+  padding: 0 80px; 
+  
   box-sizing: border-box;
 }
 
