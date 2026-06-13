@@ -259,7 +259,7 @@ h4 { font-size: 1rem; }
   min-height: 150px !important; 
 }
 
-/
+
 .form-check {
   margin-bottom: 0 !important;
   margin-top: 5px;
@@ -895,7 +895,7 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     color: #ffc107;
     border-bottom-color: #ffc107;
 }
-//home page
+/*/////////////////////////////////////////////          home page        /////////////////////////////////////////////////*/
 * {
   margin: 0;
   padding: 0;
