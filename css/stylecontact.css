@@ -896,7 +896,6 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     border-bottom-color: #ffc107;
 }
 /* home page */
-
 * {
   margin: 0;
   padding: 0;
@@ -914,7 +913,6 @@ body {
 }
 
 .nav-container {
-  background-color: #232323; 
   padding: 15px 40px;
   display: block;
 }
