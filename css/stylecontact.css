@@ -1182,7 +1182,7 @@ body {
 }
 
 .arrival-label {
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #efefef;;
   font-weight: bold;
@@ -1192,14 +1192,14 @@ body {
 }
 
 .arrival-title {
-  font-size: 32px;
+  font-size: 36px;
   color: #efefef;;
   margin-bottom: 8px;
   font-family: 'Georgia';
 }
 
 .arrival-sub {
-  font-size: 15px;
+  font-size: 19px;
   color: #efefef;;
   font-family: 'Georgia';
 }
