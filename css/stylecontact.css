@@ -235,6 +235,21 @@ h4 { font-size: 1rem; }
   flex-direction: column;
   flex-grow: 1; 
 }
+
+
+
+.form-card .msg-container {
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+
+.form-card .msg-container textarea#c-msg {
+  flex-grow: 1 !important;
+  height: 100% !important;
+  min-height: 250px !important; 
+}
 .form-card h3 { font-family: var(--ff-display); color: var(--navy); margin-bottom: 24px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
 .form-group label {
