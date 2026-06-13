@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="../css/my-account.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a class="nav-logo" href="Index.html">
+            <div class="logo-icon">📚</div>Bibli<span>OS</span>
+            </a>
+            <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Books.html">Book Catalog</a></li>
+            <li><a href="Membership.html"> Membership</a></li>
+            <li><a href="my-account.html">My Account</a></li>
+            <li><a href="Contact%20us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <nav class="account-sidebar">
+            <div class="sidebar-nav">
+                <a href="#" class="panel-borrowed" data-target="panel-borrowed">📖 Borrowed Books</a>
+                <a href="#" data-target="panel-reserved">🔖 Reserved Books</a>
+                <a href="#" data-target="panel-history">📜 Reading History</a>
+                <a href="#" data-target="panel-profile">👤 Edit Profile</a>
+                <a href="#" data-target="panel-settings">⚙️ Settings</a>
+                <a href="Index.html" style="color:#dc3545;">🚪 Sign Out</a>
+            </div>
+        </nav>
+
+        <div class="account">
+            <div class="content-card account-panel" id="panel-borrowed">
+                <div class="card-header">
+                    <h3>📖 Currently Borrowed</h3>
+                    <span style="font-size:.8rem; color:#6c757d;">2 of 5 slots used</span>
+                </div>
+                <div class="card-body" style="padding:0;">
+                    <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                        <table class="tble">
+                            <tr>
+                                <th style="width:40%;">Book</th>
+                                <th style="width:18%;">Borrow Date</th>
+                                <th style="width:18%;">Due Date</th>
+                                <th style="width:12%;">Status</th>
+                                <th style="width:12%;">Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon lightning">⚡</div>
+                                        <div class="details">
+                                            <div class="title">Atomic Habits</div>
+                                            <div class="author" style="font-size:small">James Clear</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>01 Jun 2026</td>
+                                <td><strong style="color:#856404;">22 Jun 2026</strong></td>
+                                <td><span class="borrowed">Borrowed</span></td>
+                                <td><button class="renew">Renew</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon rocket">🚀</div>
+                                        <div class="details">
+                                            <div class="title">Project Hail Mary</div>
+                                            <div class="author" style="font-size:small">Andy Weir </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>05 Jun 2026</td>
+                                <td><strong style="color:#155724;">26 Jun 2026</strong></td>
+                                <td><span class="borrowed">Borrowed</span></td>
+                                <td><button class="renew">Renew</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="nav-logo" style="margin-bottom:14px;">
+                        <div class="logo-icon">📚</div>Bibli<span>OS</span>
+                    </div>
+                    <p>Sri Lanka's premier online library management platform.</p>
+                    <div class="footer-social">
+                        <a href="#">f</a>
+                        <a href="#">𝕏</a>
+                        <a href="#">▶</a>
+                        <a href="#">📷</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Index.html">Home</a>
+                        </li><li><a href="Books.html">Book Catalog</a></li>
+                        <li><a href="Membership.html">Membership</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="Contact%20us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Fiction & Literature</a></li>
+                        <li><a href="#">Science & Technology</a></li>
+                        <li><a href="#">History & Politics</a></li>
+                        <li><a href="#">Children's Books</a></li>
+                        <li><a href="#">Academic Journals</a></li>
+                    </ul>
+                </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p>📍 42 Library Lane, Colombo 03</p>
+                        <p style="margin-top:8px;">📞 +94 11 234 5678</p>
+                        <p style="margin-top:8px;">✉️ hello@biblios.lk</p>
+                    </div>
+            </div>
+                <div class="footer-bottom">
+                    <span>© <span id="footer-year"></span> BibliOS Library. All rights reserved.</span>
+                    <span>Built with ❤️ for knowledge seekers</span>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>
