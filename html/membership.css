@@ -30,6 +30,10 @@ body{
     gap: 10px;
 }
 
+form{
+    margin-left: 40px;
+}
+
 .form-card{
     background: #ffffff;
     padding: 30px;
