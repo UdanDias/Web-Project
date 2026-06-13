@@ -16,11 +16,33 @@ body{
 }
 
 .page-container{
+    display: flex;
+    flex-direction: row;
     width:100%;
-    max-width: 650px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-.outside title{
+.form-section{
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.info-section{
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #43a3c3;
+    color: #ffffff;
+}
+
+.title{
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
