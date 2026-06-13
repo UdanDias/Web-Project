@@ -1160,7 +1160,8 @@ body {
 }
 /* --- New Arrivals Section Styles --- */
 .new-arrivals-section {
-  background-color: #fcfaf2; /* Updated to match the previous vintage page background */
+  /* Updated to match the previous vintage page background */
+  background-image: url('../img/back11.png');
   padding: 60px 20px;
   border-top: 1px solid #e2d9c8;
   width: 100%;
