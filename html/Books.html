@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
     <link rel="stylesheet" href="../css/stylecontact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,6 +20,7 @@
                 <li><a href="Membership.html">Membership</a></li>
                 <li><a href="My Account.html">My Account</a></li>
                 <li><a href="Contact us.html">Contact Us</a></li>
+                <li><a href="../AI/library/books.html">AI books</a></li>
             </ul>
         </div>
         <div >
@@ -37,9 +39,9 @@
         <div class="hero-subtitle">Explore our titles across multiple categories. Filter by title, author, or genre.</div>
     </div>
 
-    <div class="page-wrapper">
+    <div class="book-container">
 
-        <section class="books-grid">
+        <div class="books-grid">
 
             <div class="book-card" onclick="selectBook(this)"
                 data-title="Harry Potter and the Sorcerer's Stone"
@@ -119,7 +121,7 @@
                 </div>
             </div>
 
-        </section>
+        </div>
         <div class="featured-intro">
             <h1>Browse our collection</h1>
             <p class="featured-sub">The right book for your taste is in here.</p>
@@ -130,7 +132,7 @@
         
 
     </div>
-    <div class="page-wrapper-2">
+    <div class="book-container-2">
 
         <div class="featured-intro">
             <h1>Featured Books</h1>
@@ -156,18 +158,51 @@
         </div>
 
     </div>
-    <div class="footer-container">
-        <div class="logo-container">
-            <div class="footer-img"><img src="../img/Logo4.png" alt="footer logo"></div>
-            <div class="name">
-                <p>LiBerry </p>
+    <div class="footer-wrapper">
+        <footer class="footer-container">
+            <div class="logo-container">
+                <div class="name">
+                    <p><span class="L">L</span>i<span class="B">B</span>erry </p>
+                </div>
+                    
+            </div>
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul class="quick-links-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="Membership.html">Membership</a></li>
+                    <li><a href="My Account.html">My Account</a></li>
+                    <li><a href="Contact us.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <div class="cat-container">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Fiction & Litereature</li>
+                    <li>Science & Technology</li>
+                    <li>History & Politics</li>
+                    <li>Children's Books</li>
+                    <li>Academic Journals</li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <h3>
+                    Contact Us
+                </h3>
+                <ul>
+                    <li>Kandy,Colombo road,<br>Peliyagoda,Sri Lanka</li>
+                    <li>liberry@gmail.com</li>
+                    <li>071 678 7543</li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p>&copy; 2025 LiBerry. All rights reserved.</p>
             </div>
             
-        </div>
-        <div class="copyright">
-            <p>&copy all copy rights are reserved</p>
-        </div>
-        
+        </footer>
     </div>
 
     <script>
@@ -180,6 +215,11 @@
             document.getElementById('featuredAuthor').textContent = card.dataset.author;
             document.getElementById('featuredText').textContent   = card.dataset.text;
         }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstCard = document.querySelector('.book-card');
+            if (firstCard) selectBook(firstCard);
+        });
     </script>
 
 </body>
