@@ -180,18 +180,16 @@ h4 { font-size: 1rem; }
 .catalog-hero h1 { margin-bottom: 10px; }
 .catalog-hero p { color: rgba(255,255,255,.65); }
 
-
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1.5fr; 
-  gap: 30px;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
   align-items: start;
-  width: 100%;
-  max-width: 1400px; 
+  max-width: 1200px; /* පිටුව මැදට ගන්න සීමාව */
   margin: 0 auto;
-  padding: 0 40px;
-  box-sizing: border-box;
+  padding: 0 20px;
 }
+
 
 .cd-text {
   background-color: #e3f2fd; 
@@ -217,9 +215,8 @@ h4 { font-size: 1rem; }
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 30px;
+  padding: 36px;
   box-shadow: var(--shadow);
-  width: 100%; 
 }
 .form-card h3 { font-family: var(--ff-display); color: var(--navy); margin-bottom: 24px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
