@@ -262,7 +262,7 @@ body {
 }
 /* --- New Arrivals Section Styles --- */
 .new-arrivals-section {
-  background-color: #ffffff;
+  background-color: #fcfaf2; /* Updated to match the previous vintage page background */
   padding: 60px 20px;
   border-top: 1px solid #e2d9c8;
   width: 100%;
@@ -319,7 +319,7 @@ body {
 
 /* Stretched, clean book cards */
 .book-card {
-  background-color: #fcfaf2;
+  background-color: #ffffff; /* Flipped to white so cards pop out beautifully against the page background */
   border: 1px solid #e2d9c8;
   width: 200px; /* Fixed robust horizontal width */
   border-radius: 8px;
