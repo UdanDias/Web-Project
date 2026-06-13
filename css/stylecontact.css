@@ -498,15 +498,17 @@ body {
     height: 100%;
     overflow: hidden;
     transition: box-shadow 0.3s;
+    
 }
 
 .featured-card img {
     width: 100%;
-    height: 280px;
+    height: 500px;
     object-fit: cover;
     background: #ddd;
     display: block;
     flex-shrink: 0;
+    object-position:top;
 }
 
 .featured-body {
