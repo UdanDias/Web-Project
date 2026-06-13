@@ -427,3 +427,140 @@ body {
 .view-all-btn:hover {
   background-color: #1e332e;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 30px;
+    box-sizing: border-box; 
+}
+
+.left-side {
+    flex: 1; 
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side {
+    flex: 1; 
+    padding: 40px;
+    background: linear-gradient(to bottom, #4daebb, #2c7c8c); 
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 28px;
+    color: #1a4d57;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    border: 1px solid #999;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.info-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.membership-types-box {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+.membership-types-box h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.membership-types-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-types-box li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
