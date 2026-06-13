@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Membership Registration</title>
     <link rel="stylesheet" href="Membership.html">
-    <link rel="stylesheet" href="../css/stylecontact.css">
+    <link rel="stylesheet" href="membership.css">
 
 </head>
 <body>
@@ -22,149 +22,111 @@
             </ul>
     </nav>
 
-   <div class="page-container">
-    <div class="form-section">
-        <h2 class="title">Registration form</h2>
-            <form class="form-card" action="#" method="POST">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="fullname">Full Name<span class="required">*</span></label>
-                        <input type="text" id="fullname" placeholder="Suresh Perera" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="dob">date of Birth<span class="required">*</span></label>
-                        <input type="text" id="dob" required>
-                    </div>
+   <div class="main-container">
+        
+        <div class="left-side">
+            <h2 class="form-title">Registration form</h2>
+            
+            <form style="border: 2px solid #ccc; padding: 30px; border-radius: 8px;">
+                <div class="input-group">
+                    <label>FULL NAME*</label>
+                    <input type="text" placeholder="Suresh Perera" required>
                 </div>
 
-                <div class="form-group full-width">
-                    <label for="email">Email<span class="required">*</span></label>
-                    <input type="email" id="ëmail" placeholder="abc@example.com" required>
+                <div class="input-group">
+                    <label>DATE OF BIRTH*</label>
+                    <input type="date" required>
                 </div>
 
-                <div class="form-group full-width">
-                    <label for="phone">Phone Number<span class="required">*</span></label>
-                    <input type="tel" id="phone" placeholder="+94712345678" required>
+                <div class="input-group">
+                    <label>EMAIL*</label>
+                    <input type="email" placeholder="abc@example.com" required>
                 </div>
 
-                <div class="form-group full-width">
-                    <label for="address">Full Address<span class="required">*</span></label>
-                    <input type="text" id="address" placeholder="123, abc road,colombo" required>
+                <div class="input-group">
+                    <label>PHONE NUMBER*</label>
+                    <input type="tel" placeholder="+94712345678" required>
                 </div>
 
-                <div class="form-group full-width">
-                    <label for="membership">membership Type<span class="required">*</span></label>
-                    <select id="membership" required>
+                <div class="input-group">
+                    <label>FULL ADDRESS*</label>
+                    <input type="text" placeholder="123, abc road, colombo" required>
+                </div>
+
+                <div class="input-group">
+                    <label>MEMBERSHIP TYPE*</label>
+                    <select required>
                         <option value="" disabled selected>select membership type</option>
                         <option value="standard">Standard</option>
-                        <option value="prmium">Premium</option>
-                        <option value="vip">VIP</option>
+                        <option value="student">Student</option>
+                        <option value="premium">Premium</option>
                     </select>
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="password">Password<span class="required">*</span></label>
-                        <input type="password" id="password">
-                        <span class="help-text">Enter a password</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" placeholder="repeat password" required>
-                    </div>
+                <div class="input-group">
+                    <label>PASSWORD*</label>
+                    <input type="password" placeholder="Enter a password" required>
+                </div>
+
+                <div class="input-group">
+                    <label>CONFIRM PASSWORD</label>
+                    <input type="password" placeholder="repeat password" required>
                 </div>
 
                 <div class="checkbox-group">
                     <input type="checkbox" id="terms" required>
-                    <label for="terms" class="plain-label">I agree to the Terms of 
-                        service and Privaccy Policy of BookTrack Library.<span class="required">*</span>
-                    </label>
+                    <label for="terms">I agree to the Terms of service and Privacy Policy of BookTrack Library.*</label>
+                </div>
+
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </div>
+
+        <div class="right-side">
+            <h1 class="info-title">Everything you get, for free</h1>
+            <p class="sub-title">All BibliOS memberships are completely free. No hidden charges, no credit card required.</p>
+            
+            <div class="info-list">
+                <div class="info-item">
+                    <h3>📄 Borrow up to 5 books at once.</h3>
+                    <p>Keep each book for up to 21 days with free renewals.</p>
                 </div>
                 
-                <button type="submit" class="btn-submit">Register</button>
-            </form>
-    </div>
-    </div>
-
-    <div class="info-section">
-        <div class="page-container">
-        </div>
-
-        <div class="features-sidebar">
-            <h2 class="section-title">Everything you get,
-                for free </h2>
-            <p class="subtitle">All BibliOS memberships are completely free. 
-                No hideen charges, no credit card required.
-            </p>
-
-            <ul class="feature-list">
-                <li>
-                    <span class="icon">📚</span>
-                    <div class="feature-text">
-                        <strong>Borrow up to 5 books at once.</strong>
-                        <p>Keep each book for up to 21 days with free renewals</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="icon">🔍</span>
-                    <div class="feature-text">
-                        <strong>Full catalog search</strong>
-                        <p>Search by title, author, ISBN, or keyword across
-                            24,000+ titles
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="icon">📱</span>
-                    <div class="feature-text">
-                        <strong>Read on any device</strong>
-                        <p>Mobilr, Tablets, desktop - your shelf
-                            travels with you
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="icon">🔔</span>
-                    <div class="feature-text">
-                        <strong>New arrival alerts</strong>
-                        <p>Get notified when books in favourite genres
-                            arrive
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <span class="icon">⭐</span>
-                    <div class="feature-text">
-                        <strong>Reserve upcoming titles</strong>
-                        <p>Join the queue for popular books before they're
-                            available
-                        </p>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="membership-types">
-                <h3>MEMBERSHIP TYPES</h3>
-                <div class="types-row">
-                    <span>🟢 Standard</span>
-                    <span> 5 books, 21 days</span>
+                <div class="info-item">
+                    <h3>🔍 Full catalog search</h3>
+                    <p>Search by title, author, ISBN, or keyword across 24,000+ titles.</p>
                 </div>
-
-                <div class="type-row">
-                    <span>🔵 Student</span>
-                    <span> 8 books, 30 days</span>
+                
+                <div class="info-item">
+                    <h3>📱 Read on any device</h3>
+                    <p>Mobile, Tablets, desktop - your shelf travels with you.</p>
                 </div>
-
-                <div class="type-row">
-                    <span>🥇 Premium</span>
-                    <span> Unlimited Books, Priority queue</span>
+                
+                <div class="info-item">
+                    <h3>🔔 New arrival alerts</h3>
+                    <p>Get notified when books in favourite genres arrive.</p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>📦 Reserve upcoming titles</h3>
+                    <p>Join the queue for popular books before they're available.</p>
                 </div>
             </div>
+
+            <div class="membership-types-box">
+                <h2>MEMBERSHIP TYPES</h2>
+                <ul>
+                    <li>🟢 Standard 5 books, 21 days</li>
+                    <li>🔵 Student 8 books, 30 days</li>
+                    <li>🟠 Premium Unlimited Books, Priority queue</li>
+                </ul>
+            </div>
         </div>
-        
+
     </div>
-    
+
+</body>
+</html>
     
 </body>
 </html>
