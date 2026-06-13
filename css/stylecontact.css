@@ -184,7 +184,7 @@ h4 { font-size: 1rem; }
   display: grid;
   grid-template-columns: 280px 1fr; 
   gap: 8%; 
-  align-items: start;
+  align-items: stretch;
   
   
   width: 100vw;
