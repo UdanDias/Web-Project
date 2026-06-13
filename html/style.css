@@ -456,7 +456,7 @@ body {
 .right-side {
     flex: 1; 
     padding: 40px;
-    background: linear-gradient(to bottom, #4daebb, #2c7c8c); 
+    background: linear-gradient(to bottom, #3da8c3, #288ba5); 
     border-radius: 15px;
     color: white;
     display: flex;
@@ -506,10 +506,16 @@ body {
 
 .register-btn {
     padding: 10px 20px;
-    background-color: #eaeaea;
-    border: 1px solid #999;
-    cursor: pointer;
+    background-color: #3da8c3;
+    color: white;
+    border: none;
     border-radius: 3px;
+    transition: background 0.3s ease, trasform 0.2s ease;
+}
+
+.register-btn:hover{
+  background-color: #288ba5;
+  transform: translate(-2px);
 }
 
 .info-title {
