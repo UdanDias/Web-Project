@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +5,86 @@
 }
 
 body {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   background-color: #fcfaf2; 
   color: #2c2520;
   line-height: 1.6;
-  padding: 40px 20px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+.nav-container {
+  background-color: #232323; 
+  padding: 15px 40px;
+  display: block;
+}
+
+.nav-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  height: 40px; 
+  display: block;
+}
+
+.nav-items {
+  float: right;
+  list-style: none;
+  margin-top: 8px;
+}
+
+.nav-items li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.nav-items li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.nav-items li a:hover {
+  color: #dfcbb5; 
+}
+
+.hero-section {
+  background-color: #f1b81a; 
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.browse-badge {
+  display: inline-block;
+  background-color: #d94532; 
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.hero-section h2 {
+  font-size: 42px;
+  color: #5c1d24; 
+  letter-spacing: 1px;
+}
+
 .vintage-hero-outer {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 80px auto; 
   background-color: #ffffff;
   border: 1px solid #e2d9c8;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -29,11 +95,11 @@ body {
   display: table;
   clear: both;
 }
+
 .hero-left-col {
   float: left;
   width: 45%;      
-  /* Changed to match the dynamic height of the right content column */
-  min-height: 620px; 
+  height: 640px; 
   background-size: cover;
   background-position: center;
   animation: imageSlider 12s infinite; 
@@ -60,28 +126,37 @@ body {
     background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1000&auto=format&fit=crop');
   }
 }
+
 .hero-right-col {
   float: left;
   width: 55%;      
-  /* Using min-height allows the box to expand if text grows */
-  min-height: 620px;   
-  padding: 40px;
+  height: 640px;   
+  padding: 50px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-block {
+  margin-bottom: 15px;
 }
 
 .main-title {
-  font-size: 2.5rem;
+  font-size: 36px;
   color: #5c1d24; 
   letter-spacing: 3px;
-  margin-bottom: 20px;
   border-bottom: 2px solid #dfcbb5;
   display: inline-block;
+  padding-bottom: 5px;
 }
 
 .description-text {
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-bottom: 18px;
   color: #4a3f35;
+  text-align: justify;
 }
+
 .details-row::after {
   content: "";
   display: table;
@@ -90,36 +165,59 @@ body {
 
 .badge-and-text {
   float: left;
-  width: 100%; /* Spans full width now that image is gone */
+  width: 100%; 
+}
+
+.sub-description {
+  font-size: 14px;
+  font-style: italic;
+  color: #55483c;
+  margin-bottom: 8px;
+}
+
+.sub-description-extra {
+  font-size: 14px;
+  color: #7c6e61;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
 .learn_more {
   display: inline-block;
   background-color: #2d4a43; 
+  padding: 10px 24px;
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+.learn_more:hover {
+  background-color: #1e332e;
+}
+
+.learn_more a {
   color: #fcfaf2;
-  padding: 6px 12px;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 0.95rem;
-  margin-bottom: 12px;
+  font-size: 15px;
+  display: block;
 }
 
-.sub-description {
-  font-size: 0.95rem;
-  font-style: italic;
-  color: #55483c;
-  margin-bottom: 5px;
-}
-
-.sub-description-extra {
-  font-size: 0.95rem;
-  color: #7c6e61;
-
-}
 @media (max-width: 850px) {
+  .logo, .nav-items {
+    float: none;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .nav-items {
+    padding-left: 0;
+  }
+  .nav-items li {
+    margin: 5px 10px;
+  }
   .hero-left-col, .hero-right-col {
     float: none;
     width: 100%;
-    min-height: auto;
+    height: auto;
   }
   .hero-left-col {
     height: 350px;
