@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Georgia';
   background-color: #fcfaf2; 
   color: #2c2520;
   line-height: 1.6;
@@ -207,6 +207,35 @@ body {
   display: block;
 }
 
+.about-us-container {
+  max-width: 1100px;
+  margin: 0 auto 80px auto;
+  background-color: #ffffff;
+  border: 1px solid #e2d9c8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-us-content {
+  padding: 50px 45px;
+}
+
+.about-us-content h3 {
+  font-size: 28px;
+  color: #5c1d24;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dfcbb5;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-us-content p {
+  font-size: 15px;
+  font-weight: normal;
+  color: #4a3f35;
+  text-align: justify;
+}
+
 @media (max-width: 850px) {
   .logo, .nav-items {
     float: none;
@@ -226,5 +255,8 @@ body {
   }
   .hero-left-col {
     height: 350px;
+  }
+  .about-us-content {
+    padding: 30px 20px;
   }
 }
