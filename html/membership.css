@@ -145,3 +145,96 @@ input:focus, select:focus{
         gap: 0;
     }
 }
+
+.registration-layout {
+    display: flex;
+    max-width : 1200px;
+    margin : 0 auto;
+    gap : 40px;
+    padding : 20px;
+    align-items : flex-start;
+}
+
+.page-container {
+    flex: 1;
+}
+
+.features-sidebar {
+    flex : 1;
+    background-color : #f8f9fa;
+    padding : 30px;
+    border-radius : 8px;
+    font-family : sans-serif;
+    color : #333;
+}
+
+.section-title {
+    font-size : 2 rem;
+    font-family : 'Georgia', serif;
+    color : #112233;
+    margin-bottom : 10px;
+}
+
+.subtitle {
+    color : #666;
+    margin-bottom : 30px;
+    line-height : 1.5;
+}
+
+.feature-list .icon {
+    font-size : 1.25rem;
+    margin-top : 2px;
+    
+}
+
+.feature-list {
+    list-style : none;
+    padding : 0;
+    margin : 0 0 40px 0;
+}
+
+.feature-list li{
+    display : flex;
+    align-items : center;
+    gap : 15px;
+    margin-bottom : 20px;
+}
+
+.feature-text strong {
+    display : block;
+    font-size : 1.05rem;
+    color : #111;
+    margin-bottom : 3px;
+}
+
+.feature-text p {
+    margin : 0;
+    color : #666;
+    font-size : 0.95rem;
+}
+
+.membership-types h3 {
+    font-size: 0.85rem;
+    letter-spacing : 1px;
+    color : #222;
+    border-bottom : 1px dashed #ccc;
+    padding-bottom : 8px;
+    margin-bottom : 15px;
+}
+
+.type-row {
+    display :flex;
+    justify-content : space-between;
+    padding : 8px 0;
+    font-size : 0.95rem;
+    color : #333;
+}
+
+.feature-list
+.type-row span:first-child {
+    font-weight : 500;
+}
+
+.type-row span:last-child {
+    color : #555;
+}
