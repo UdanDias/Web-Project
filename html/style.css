@@ -152,6 +152,7 @@ body {
 
 .description-text {
   font-size: 15px;
+  font-weight: normal;
   margin-bottom: 18px;
   color: #4a3f35;
   text-align: justify;
@@ -169,15 +170,19 @@ body {
 }
 
 .sub-description {
-  font-size: 14px;
-  font-style: italic;
-  color: #55483c;
-  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  color: #4a3f35;
+  margin-bottom: 18px;
+  text-align: justify;
 }
 
 .sub-description-extra {
-  font-size: 14px;
-  color: #7c6e61;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  color: #4a3f35;
   margin-bottom: 25px;
   text-align: justify;
 }
@@ -197,7 +202,7 @@ body {
 .learn_more a {
   color: #fcfaf2;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 15px;
   display: block;
 }
