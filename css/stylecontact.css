@@ -895,7 +895,7 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     color: #ffc107;
     border-bottom-color: #ffc107;
 }
-/*/////////////////////////////////////////////          home page        /////////////////////////////////////////////////*/
+//home page
 * {
   margin: 0;
   padding: 0;
@@ -904,15 +904,17 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
 
 body {
   font-family: 'Georgia';
-  background-color: #fcfaf2; 
+  background-image: url('../img/back11.png'); 
   color: #2c2520;
+  background: #f0f0f0;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
+/*
 .nav-container {
+  background-color: #232323; 
   padding: 15px 40px;
   display: block;
 }
@@ -952,7 +954,7 @@ body {
 
 .nav-items li a:hover {
   color: #dfcbb5; 
-}
+}*/
 
 .hero-section {
   background-color: #f1b81a; 
@@ -1324,6 +1326,7 @@ body {
 .view-all-btn:hover {
   background-color: #1e332e;
 }
+
 
 
 
