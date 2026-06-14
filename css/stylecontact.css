@@ -410,11 +410,23 @@ a {
   color: var(--navy);
 }
 
-.section-alt {
-  width: 100%;
+.section-alt .container {
+  text-align: center;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  max-width: 1160px;  
 }
 
+.section-alt {
+  background: transparent; 
+  display: flex;
+  justify-content: center;
+}
 
+.section.section-alt {
+  margin-top: 40px;    
 
 /* Success toast */
 .toast {
@@ -1076,13 +1088,15 @@ body {
   color: #ffc107;
   border-bottom-color: #ffc107;
 }
+
 .accordion-item {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
 }
+
 .accordion-header {
   width: 100%;
   text-align: left;
@@ -1099,17 +1113,26 @@ body {
   align-items: center;
   transition: background var(--transition);
 }
-.accordion-header:hover { background: var(--light); }
-.accordion-header.open { color: var(--gold-d); }
+
+.accordion-header:hover {
+  background: var(--light);
+}
+
+.accordion-header.open {
+  color: var(--gold-d);
+}
+
 .accordion-arrow {
   font-size: .75rem;
   color: var(--text-l);
   transition: transform var(--transition);
 }
+
 .accordion-header.open .accordion-arrow {
   transform: rotate(180deg);
   color: var(--gold-d);
 }
+
 .accordion-body {
   display: none;
   padding: 0 20px 18px;
@@ -1119,8 +1142,16 @@ body {
   border-top: 1px solid #edf2f7;
   padding-top: 14px;
 }
-.accordion-body.open { display: block; }
-.accordion-body em { color: var(--navy); font-style: italic; }
+
+.accordion-body.open {
+  display: block;
+}
+
+.accordion-body em {
+  color: var(--navy);
+  font-style: italic;
+}
+
 /*/////////////////////////////////////////////          home page        /////////////////////////////////////////////////*/
 /* * {
   margin: 0;
@@ -1840,9 +1871,14 @@ body {
     text-align: left;
   }
 }
+<<<<<<< HEAD
 /* ==========================================================================
    DATE & TIME DISPLAY STYLES
    ========================================================================== */
+=======
+
+/*DATE & TIME DISPLAY STYLES */
+>>>>>>> bbc663d90912030186f945a34b5bef6ffe7765a4
 .datetime-display-box {
   font-family: 'Georgia';
   color: #7c6e61; /* Matches your vintage subtitle text color */
@@ -2214,4 +2250,8 @@ body.account-page .toast.show {
   .form-row .form-group {
     min-width: 100%;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bbc663d90912030186f945a34b5bef6ffe7765a4
