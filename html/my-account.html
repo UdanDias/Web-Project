@@ -31,10 +31,16 @@
     </div>
 </nav>
 
+    <div class="hero-section">
+        <span class="browse-badge">Your Library Space</span>
+        <h2>MY ACCOUNT</h2>
+        <div class="hero-subtitle">Manage your borrowed books, reservations, and profile</div>
+    </div>
+
     <div class="wrapper">
         <nav class="account-sidebar">
             <div class="sidebar-nav">
-                <a href="#" class="panel-borrowed" data-target="panel-borrowed">📖 Borrowed Books</a>
+                <a href="#" class="active" data-target="panel-borrowed">📖 Borrowed Books</a>
                 <a href="#" data-target="panel-reserved">🔖 Reserved Books</a>
                 <a href="#" data-target="panel-history">📜 Reading History</a>
                 <a href="#" data-target="panel-profile">👤 Edit Profile</a>
@@ -93,8 +99,398 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Reserved Books -->
+            <div class="content-card account-panel" id="panel-reserved" style="display:none;">
+                <div class="card-header">
+                    <h3>🔖 Reserved Books</h3>
+                    <span style="font-size:.8rem; color:#6c757d;">5 reservations active</span>
+                </div>
+                <div class="card-body" style="padding:0;">
+                    <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                        <table class="tble">
+                            <tr>
+                                <th style="width:35%;">Book</th>
+                                <th style="width:15%;">Reserved On</th>
+                                <th style="width:18%;">Est. Available</th>
+                                <th style="width:12%;">Queue</th>
+                                <th style="width:10%;">Status</th>
+                                <th style="width:10%;">Action</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon midnight">📖</div>
+                                        <div class="details">
+                                            <div class="title">The Midnight Library</div>
+                                            <div class="author" style="font-size:small">Matt Haig</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>08 Jun 2026</td>
+                                <td>~18 Jun 2026</td>
+                                <td>#2 in queue</td>
+                                <td><span class="reserved">Reserved</span></td>
+                                <td><button class="cancel-btn">Cancel</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon ocean">🌊</div>
+                                        <div class="details">
+                                            <div class="title">The Old Man and the Sea</div>
+                                            <div class="author" style="font-size:small">Ernest Hemingway</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>10 Jun 2026</td>
+                                <td>~25 Jun 2026</td>
+                                <td>#1 in queue</td>
+                                <td><span class="reserved">Reserved</span></td>
+                                <td><button class="cancel-btn">Cancel</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon lightning">👁️</div>
+                                        <div class="details">
+                                            <div class="title">1984</div>
+                                            <div class="author" style="font-size:small">George Orwell</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>12 Jun 2026</td>
+                                <td>~20 Jun 2026</td>
+                                <td>#3 in queue</td>
+                                <td><span class="reserved">Reserved</span></td>
+                                <td><button class="cancel-btn">Cancel</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon rocket">🐦</div>
+                                        <div class="details">
+                                            <div class="title">To Kill a Mockingbird</div>
+                                            <div class="author" style="font-size:small">Harper Lee</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>13 Jun 2026</td>
+                                <td>~28 Jun 2026</td>
+                                <td>#1 in queue</td>
+                                <td><span class="reserved">Reserved</span></td>
+                                <td><button class="cancel-btn">Cancel</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="book">
+                                        <div class="book-icon ocean">🐒</div>
+                                        <div class="details">
+                                            <div class="title">Sapiens</div>
+                                            <div class="author" style="font-size:small">Yuval Noah Harari</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>14 Jun 2026</td>
+                                <td>~05 Jul 2026</td>
+                                <td>#5 in queue</td>
+                                <td><span class="reserved">Reserved</span></td>
+                                <td><button class="cancel-btn">Cancel</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading History -->
+            <div class="content-card account-panel" id="panel-history" style="display:none;">
+                <div class="card-header">
+                    <h3>📜 Reading History</h3>
+                    <button id="toggle-history" class="renew" style="font-size:.8rem; padding:6px 14px;">Hide History</button>
+                </div>
+                <div class="card-body" id="reading-history" style="padding:0;">
+                    <div class="accordion-item">
+                        <button class="accordion-header open" type="button">
+                            📅 May 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">3 books</span>
+                            <span class="accordion-arrow">▼</span>
+                        </button>
+                        <div class="accordion-body open">
+                            <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                                <table class="tble">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Returned</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Sapiens</td>
+                                        <td>Yuval Noah Harari</td>
+                                        <td>28 May 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educated</td>
+                                        <td>Tara Westover</td>
+                                        <td>14 May 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dune</td>
+                                        <td>Frank Herbert</td>
+                                        <td>02 May 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" type="button">
+                            📅 April 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">4 books</span>
+                            <span class="accordion-arrow">▼</span>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                                <table class="tble">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Returned</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                    <tr>
+                                        <td>The Hobbit</td>
+                                        <td>J.R.R. Tolkien</td>
+                                        <td>28 Apr 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Braiding Sweetgrass</td>
+                                        <td>Robin Kimmerer</td>
+                                        <td>20 Apr 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charlotte's Web</td>
+                                        <td>E.B. White</td>
+                                        <td>11 Apr 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Demon Copperhead</td>
+                                        <td>Barbara Kingsolver</td>
+                                        <td>03 Apr 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" type="button">
+                            📅 March 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">5 books</span>
+                            <span class="accordion-arrow">▼</span>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                                <table class="tble">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Returned</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                    <tr>
+                                        <td>A Brief History of Time</td>
+                                        <td>Stephen Hawking</td>
+                                        <td>29 Mar 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project Hail Mary</td>
+                                        <td>Andy Weir</td>
+                                        <td>20 Mar 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Atomic Habits</td>
+                                        <td>James Clear</td>
+                                        <td>15 Mar 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educated</td>
+                                        <td>Tara Westover</td>
+                                        <td>08 Mar 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Midnight Library</td>
+                                        <td>Matt Haig</td>
+                                        <td>02 Mar 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" type="button">
+                            📅 February 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">3 books</span>
+                            <span class="accordion-arrow">▼</span>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                                <table class="tble">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Returned</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                    <tr>
+                                        <td>The Alchemist</td>
+                                        <td>Paulo Coelho</td>
+                                        <td>25 Feb 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pride and Prejudice</td>
+                                        <td>Jane Austen</td>
+                                        <td>18 Feb 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brave New World</td>
+                                        <td>Aldous Huxley</td>
+                                        <td>05 Feb 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" type="button">
+                            📅 January 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">2 books</span>
+                            <span class="accordion-arrow">▼</span>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="table-wrap" style="box-shadow:none; border:none; border-radius:0;">
+                                <table class="tble">
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Author</th>
+                                        <th>Returned</th>
+                                        <th>Rating</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Think and Grow Rich</td>
+                                        <td>Napoleon Hill</td>
+                                        <td>28 Jan 2026</td>
+                                        <td>⭐⭐⭐⭐⭐</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Crime and Punishment</td>
+                                        <td>Fyodor Dostoevsky</td>
+                                        <td>12 Jan 2026</td>
+                                        <td>⭐⭐⭐⭐</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit Profile -->
+            <div class="content-card account-panel" id="panel-profile" style="display:none;">
+                <div class="card-header">
+                    <h3>👤 Edit Profile</h3>
+                </div>
+                <div class="card-body">
+                    <form id="profile-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="p-name">Full Name</label>
+                                <input type="text" id="p-name" value="Suresh Perera">
+                            </div>
+                            <div class="form-group">
+                                <label for="p-email">Email</label>
+                                <input type="email" id="p-email" value="suresh.perera@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="p-phone">Phone</label>
+                                <input type="tel" id="p-phone" value="+94 71 678 7543">
+                            </div>
+                            <div class="form-group">
+                                <label for="p-dob">Date of Birth</label>
+                                <input type="date" id="p-dob" value="2004-06-15">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="p-address">Address</label>
+                            <input type="text" id="p-address" value="Kandy, Colombo road, Peliyagoda, Sri Lanka">
+                        </div>
+                        <button type="submit" class="renew">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Settings -->
+            <div class="content-card account-panel" id="panel-settings" style="display:none;">
+                <div class="card-header">
+                    <h3>⚙️ Account Settings</h3>
+                </div>
+                <div class="card-body">
+                    <div class="settings-list">
+                        <label class="setting-item">
+                            <span>
+                                <strong>Email notifications</strong><br>
+                                <small>Receive alerts for due dates and new arrivals</small>
+                            </span>
+                            <input type="checkbox" checked>
+                        </label>
+                        <hr>
+                        <label class="setting-item">
+                            <span>
+                                <strong>SMS notifications</strong><br>
+                                <small>Text alerts for overdue books</small>
+                            </span>
+                            <input type="checkbox">
+                        </label>
+                        <hr>
+                        <label class="setting-item">
+                            <span>
+                                <strong>Newsletter</strong><br>
+                                <small>Monthly reading recommendations</small>
+                            </span>
+                            <input type="checkbox" checked>
+                        </label>
+                        <hr>
+                        <label class="setting-item">
+                            <span>
+                                <strong>Reading history visibility</strong><br>
+                                <small>Allow others to see your reading stats</small>
+                            </span>
+                            <input type="checkbox">
+                        </label>
+                        <hr>
+                        <button type="button" id="save-settings" class="renew">Save Settings</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
 <div class="footer-wrapper">
     <footer class="footer-container">
@@ -142,5 +538,76 @@
 
     </footer>
 </div>
+
+<script>
+    // Sidebar panel switching
+    const sidebarLinks = document.querySelectorAll('.sidebar-nav a[data-target]');
+    const panels = document.querySelectorAll('.account-panel');
+
+    sidebarLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = link.getAttribute('data-target');
+
+            sidebarLinks.forEach(function (item) { item.classList.remove('active'); });
+            link.classList.add('active');
+
+            panels.forEach(function (panel) { panel.style.display = 'none'; });
+            document.getElementById(target).style.display = 'block';
+        });
+    });
+
+    // Reading history accordion
+    document.querySelectorAll('.accordion-header').forEach(function (header) {
+        header.addEventListener('click', function () {
+            const isOpen = header.classList.contains('open');
+
+            document.querySelectorAll('.accordion-header').forEach(function (h) {
+                h.classList.remove('open');
+            });
+            document.querySelectorAll('.accordion-body').forEach(function (body) {
+                body.classList.remove('open');
+            });
+
+            if (!isOpen) {
+                header.classList.add('open');
+                header.nextElementSibling.classList.add('open');
+            }
+        });
+    });
+
+    // Show / hide reading history
+    const toggleHistoryBtn = document.getElementById('toggle-history');
+    const readingHistory = document.getElementById('reading-history');
+
+    toggleHistoryBtn.addEventListener('click', function () {
+        const isHidden = readingHistory.style.display === 'none';
+        readingHistory.style.display = isHidden ? 'block' : 'none';
+        toggleHistoryBtn.textContent = isHidden ? 'Hide History' : 'Show History';
+    });
+
+    // Simple toast message (frontend only)
+    function showToast(message) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(function () { toast.classList.remove('show'); }, 2500);
+    }
+
+    document.getElementById('profile-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        showToast('Profile updated successfully!');
+    });
+
+    document.getElementById('save-settings').addEventListener('click', function () {
+        showToast('Settings saved!');
+    });
+
+    document.querySelectorAll('.cancel-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            showToast('Reservation cancelled.');
+        });
+    });
+</script>
 </body>
 </html>
