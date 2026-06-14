@@ -802,10 +802,11 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     border-bottom: 2px solid rgba(255, 255, 255, 0.463);
     padding: 6px;
     width: fit-content;
-    margin: 0 auto;      /* centers the h3 block itself */
+    margin: 0 auto;     
     text-align: center;
     font-size: 20px;
 }
+
 
 .cat-container h3 {
     border-bottom: 2px solid rgba(255, 255, 255, 0.463);
@@ -834,6 +835,15 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     text-align: center;
     line-height: 2;
 
+}
+.quick-links-list a {
+    color: #d9d9d9;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.quick-links-list a:hover {
+    color: #fab639; 
 }
 .footer-bottom {
     grid-column: 1 / -1;   
