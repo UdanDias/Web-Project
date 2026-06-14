@@ -27,153 +27,6 @@
   --transition: .25s ease;
 }
 
-/* 
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: var(--ff-body);
-  font-size: 15px;
-  color: var(--text);
-  background: var(--white);
-  line-height: 1.65;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-img { max-width: 100%; height: auto; display: block; }
-ul { list-style: none; }
-
-h1, h2, h3, h4 { font-family: var(--ff-display); line-height: 1.25; }
-h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
-h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
-h3 { font-size: 1.25rem; }
-h4 { font-size: 1rem; }
-
-
-.container { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
-.section    { padding: 72px 0; }
-.section-alt { background: var(--light); }
-.text-center { text-align: center; }
-.mt-4 { margin-top: 1rem; }
-.mb-0 { margin-bottom: 0 !important; }
-
-.section-label {
-  display: inline-block;
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--gold-d);
-  background: rgba(248,180,0,.12);
-  padding: 4px 12px;
-  border-radius: 30px;
-  margin-bottom: 12px;
-}
-.section-title {
-  font-family: var(--ff-display);
-  font-size: clamp(1.5rem, 3vw, 2.1rem);
-  color: var(--navy);
-  margin-bottom: 10px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--ff-body);
-  font-size: .875rem;
-  font-weight: 600;
-  padding: 11px 26px;
-  border-radius: 6px;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all var(--transition);
-  line-height: 1;
-}
-.btn-primary {
-  background: var(--gold);
-  color: var(--navy-d);
-  border-color: var(--gold);
-}
-.btn-primary:hover { background: var(--gold-d); border-color: var(--gold-d); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(248,180,0,.35); }
-
-
-#navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--navy);
-  box-shadow: 0 2px 16px rgba(0,0,0,.25);
-}
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 66px;
-}
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: var(--ff-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--white);
-}
-.nav-logo .logo-icon {
-  width: 38px; height: 38px;
-  background: var(--gold);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.15rem;
-}
-.nav-logo span { color: var(--gold); }
-
-.nav-links { display: flex; gap: 4px; }
-.nav-links a {
-  color: rgba(255,255,255,.75);
-  font-size: .875rem;
-  font-weight: 500;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: all var(--transition);
-  position: relative;
-}
-.nav-links a:hover, .nav-links a.active {
-  color: var(--white);
-  background: rgba(255,255,255,.1);
-}
-.nav-links a.active::after {
-  content: '';
-  position: absolute;
-  bottom: 4px; left: 50%; transform: translateX(-50%);
-  width: 20px; height: 2px;
-  background: var(--gold);
-  border-radius: 2px;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  padding: 6px;
-  background: none;
-  border: none;
-}
-.hamburger span {
-  display: block;
-  width: 22px; height: 2px;
-  background: var(--white);
-  border-radius: 2px;
-  transition: all var(--transition);
-} */
-
-/* ============================================================
-   CONTACT US PAGE HERO SECTION
-   ============================================================ */
 a {
   color: inherit;
   text-decoration: none;
@@ -308,7 +161,7 @@ a {
 }
 
 .form-card h3 {
-  font-family: var(--ff-display);
+  font-family: 'Inter', sans-serif;
   color: var(--navy);
   margin-bottom: 24px;
 }
@@ -334,7 +187,7 @@ a {
   padding: 10px 14px;
   border: 1.5px solid var(--border);
   border-radius: 6px;
-  font-family: var(--ff-body);
+  font-family: 'Inter', sans-serif;
   font-size: .9rem;
   color: var(--text);
   background: var(--white);
@@ -468,7 +321,7 @@ footer {
 
 .footer-col h4 {
   color: var(--white);
-  font-family: var(--ff-display);
+  font-family: 'Inter', sans-serif;
   font-size: .95rem;
   margin-bottom: 16px;
 }
@@ -1036,7 +889,6 @@ body {
 .name {
   color: white;
   font-size: 4rem;
-  /* font-family: 'Cormorant Garamond', serif; */
   font-family: 'Playfair Display', serif;
   font-weight: 600;
 
@@ -1100,7 +952,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 16px 20px;
-  font-family: var(--ff-body);
+  font-family: 'Inter', sans-serif;
   font-size: .95rem;
   font-weight: 600;
   color: var(--navy);
@@ -1305,7 +1157,6 @@ body {
   font-size: 36px;
   color: #5c1d24;
   letter-spacing: 3px;
-  border-bottom: 2px solid #dfcbb5;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -1436,8 +1287,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   clear: both;
-  font-family: 'Georgia';
-
+  font-family: 'Inter', sans-serif;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1454,28 +1304,30 @@ body {
   margin-bottom: 40px;
 }
 
+
 .arrival-label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #07205ec8!important;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 6px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 .arrival-title {
-  font-size: 36px;
-  color: #ffffff;
+  font-size: 50px!important;
+  color: #efefef!important;
   margin-bottom: 8px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 .arrival-sub {
   font-size: 19px;
-  color: #ffffff;
-  font-family: 'Georgia';
+  color:  #f2f2f5dd!important;
+  font-family: 'Inter', sans-serif;
 }
+
 
 .books-grid {
   display: flex;
@@ -1547,7 +1399,7 @@ body {
   padding: 4px 10px;
   border-radius: 4px;
   color: #ffffff;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
 }
 
@@ -1568,7 +1420,7 @@ body {
   font-size: 16px;
   color: #2c2520;
   margin: 0 0 6px 0;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   line-height: 1.4;
   white-space: normal;
@@ -1579,7 +1431,7 @@ body {
   font-size: 13px;
   color: #7c6e61;
   margin: 0 0 12px 0;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 .genre-tag {
@@ -1589,7 +1441,7 @@ body {
   color: #4a3f35;
   padding: 3px 10px;
   border-radius: 4px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 .arrivals-footer {
@@ -1606,7 +1458,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   font-size: 15px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   transition: background-color 0.2s ease;
 }
 
@@ -1655,7 +1507,7 @@ body {
 
 .new-arrivals-section,
 .about-section-wrapper {
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -1694,6 +1546,7 @@ body {
   font-size: 32px;
   color: #5c1d24;
   margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
 }
 
 .arrival-sub {
@@ -1867,28 +1720,21 @@ body {
     text-align: left;
   }
 }
-<<<<<<< HEAD
-/* ==========================================================================
-   DATE & TIME DISPLAY STYLES
-   ========================================================================== */
-=======
 
-/*DATE & TIME DISPLAY STYLES */
->>>>>>> bbc663d90912030186f945a34b5bef6ffe7765a4
 .datetime-display-box {
-  font-family: 'Georgia';
-  color: #7c6e61; /* Matches your vintage subtitle text color */
+  font-family: 'Inter', sans-serif;
+  color: #7c6e61; 
   font-size: 14px;
   text-align: center;
   padding: 15px 0;
-  background-color: #fcfaf2; /* Matches your vintage page background */
+  background-color: #fcfaf2; 
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 0.5px;
 }
 
 .datetime-separator {
-  color: #e2d9c8; /* Matches your border accent lines */
+  color: #e2d9c8; 
   margin: 0 10px;
   font-weight: bold;
 }
@@ -1896,7 +1742,6 @@ body {
 /*////////////////////////////////             my-account.html          //////////////////////*/
 
 
-/* Side Bar & Table */
 
 .wrapper {
   flex: 1;
@@ -1990,7 +1835,7 @@ body {
 }
 
 .book .title {
-  color: var(--acc-navy);
+  color: #1E3A5F;
   font-weight: 600px;
   margin-bottom: 4px;
 }
@@ -2000,13 +1845,16 @@ body {
 }
 
 .renew {
-  background-color: var(--acc-navy);
+  background-color: #1E3A5F;
   color: #ffffff;
   padding: 8px 16px;
   border-radius: 6px;
   border: none;
   font-weight: 600;
   cursor: pointer;
+}
+.renew:hover {
+  background-color: #4fb3c5;
 }
 
 .borrowed {
@@ -2047,7 +1895,6 @@ body {
   background-color: #2b6cb0;
 }
 
-/* Sidebar active state */
 
 .account-sidebar a.active {
   border-left: 3px solid #d69e2e;
@@ -2056,7 +1903,6 @@ body {
   font-weight: 600;
 }
 
-/* Status badges */
 
 .reserved {
   background-color: #fefcbf;
@@ -2084,7 +1930,6 @@ body {
   background-color: #fff5f5;
 }
 
-/* Card body & forms */
 
 .card-body {
   padding: 24px;
@@ -2106,7 +1951,6 @@ body {
   min-width: 220px;
 }
 
-/* Reading history accordion */
 
 .accordion-item {
   border-bottom: 1px solid #edf2f7;
@@ -2197,7 +2041,7 @@ body {
 
 /* Toast notification */
 
-body.account-page .toast {
+/* body.account-page .toast {
   position: fixed;
   bottom: 24px;
   right: 24px;
@@ -2218,7 +2062,7 @@ body.account-page .toast {
 body.account-page .toast.show {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 /* Responsive */
 
@@ -2246,8 +2090,4 @@ body.account-page .toast.show {
   .form-row .form-group {
     min-width: 100%;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> bbc663d90912030186f945a34b5bef6ffe7765a4
