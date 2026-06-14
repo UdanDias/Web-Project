@@ -90,7 +90,7 @@
 }
 
 .tble th {
-    background: var(--navy);
+    background: #1a1235;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 0.75rem;
