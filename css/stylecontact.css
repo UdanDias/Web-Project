@@ -409,9 +409,20 @@ a {
   color: var(--navy);
 }
 
-.container { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+.section-alt .container {
+  text-align: center;
+  background: var(--light);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  max-width: none;  
+}
+.section.section-alt {
+  margin-top: 40px;      
+}
 
 
+   
 
 /* Success toast */
 .toast {
@@ -1856,27 +1867,31 @@ body {
     text-align: left;
   }
 }
+<<<<<<< HEAD
+/* ==========================================================================
+   DATE & TIME DISPLAY STYLES
+   ========================================================================== */
+=======
 
 /*DATE & TIME DISPLAY STYLES */
+>>>>>>> bbc663d90912030186f945a34b5bef6ffe7765a4
 .datetime-display-box {
   font-family: 'Georgia';
-  color: #7c6e61;
-  /* Matches your vintage subtitle text color */
+  color: #7c6e61; /* Matches your vintage subtitle text color */
   font-size: 14px;
   text-align: center;
   padding: 15px 0;
-  background-color: #fcfaf2;
+  background-color: #fcfaf2; /* Matches your vintage page background */
   width: 100%;
   box-sizing: border-box;
   letter-spacing: 0.5px;
 }
 
 .datetime-separator {
-  color: #e2d9c8;
+  color: #e2d9c8; /* Matches your border accent lines */
   margin: 0 10px;
   font-weight: bold;
 }
-
 
 /*////////////////////////////////             my-account.html          //////////////////////*/
 
@@ -2231,4 +2246,8 @@ body.account-page .toast.show {
   .form-row .form-group {
     min-width: 100%;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bbc663d90912030186f945a34b5bef6ffe7765a4
