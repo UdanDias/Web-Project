@@ -189,6 +189,14 @@
   <script>
     var accentColor = "#5c1d24";
     document.getElementById("mainTitle").style.color = accentColor;
+    function updateDateTime() {
+    const now = new Date();
+    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = now.toLocaleDateString('en-US', dateOptions);
+    const timeOptions = { hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true };
+    const formattedTime = now.toLocaleTimeString('en-US', timeOptions);
+    document.getElementById('current-date-text').textContent = formattedDate;
+    document.getElementById('current-time-text').textContent = formattedTime;
   </script>
 
 </body>
