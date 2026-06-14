@@ -13,7 +13,7 @@
 :root {
   --navy: #1E3A5F;
   --navy-d: #142947;
-  --navy-l: #2a4f7f;
+  --navy-l: #30578a;
   --gold: #F8B400;
   --gold-d: #d9a000;
   --light: #F4F4F4;
@@ -412,7 +412,7 @@ a {
 
 .section-alt .container {
   text-align: center;
-  background: var(--light);
+  background: var(--navy-l);
   border-radius: 12px;
   padding: 40px;
   box-shadow: var(--shadow);
