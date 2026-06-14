@@ -1189,7 +1189,7 @@ body {
 .arrival-label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #efefef;;
+  color:  #ffffff;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 6px;
@@ -1198,14 +1198,14 @@ body {
 
 .arrival-title {
   font-size: 36px;
-  color: #efefef;;
+  color:  #ffffff;
   margin-bottom: 8px;
   font-family: 'Georgia';
 }
 
 .arrival-sub {
   font-size: 19px;
-  color: #efefef;;
+  color:  #ffffff;
   font-family: 'Georgia';
 }
 
