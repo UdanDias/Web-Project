@@ -1369,7 +1369,6 @@ body {
 }
 /* --- About Us Section Styles --- */
 .about-section-wrapper {
-  background-color: #fcfaf2; /* Matches the vintage background exactly */
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
