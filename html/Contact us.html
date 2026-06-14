@@ -321,8 +321,8 @@
       }
     }
 
-    function isValidEmail(value) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    function isValidEmail(email) {
+      return email.includes('@') && email.includes('.');
     }
 
     function validateField(id) {
@@ -360,20 +360,6 @@
       });
 
       if (!isValid) return;
-
-      const toast = document.createElement('div');
-      toast.className = 'toast';
-      toast.innerHTML = '✅ Your message has been sent successfully!';
-      document.body.appendChild(toast);
-
-      requestAnimationFrame(function () {
-        toast.classList.add('show');
-      });
-
-      setTimeout(function () {
-        toast.classList.remove('show');
-        setTimeout(function () { toast.remove(); }, 350);
-      }, 3000);
 
       form.reset();
       Object.keys(fields).forEach(clearError);
