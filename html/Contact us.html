@@ -85,7 +85,7 @@
       <div class="contact-detail-item" style="text-align: center;">
         <div class="cd-text">
           <strong>Website</strong>
-          <span style="display: block; margin-top: 4px;">www.bookuniverse.com</span>
+          <span style="display: block; margin-top: 4px;">www.LiBerry.com</span>
         </div>
       </div>
     </div>
@@ -285,6 +285,98 @@
         $(this).addClass('open');
         $(this).next('.accordion-body').addClass('open');
       }
+    });
+  });
+</script>
+<script>
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    const fields = {
+      'c-name':    { required: true,  type: 'text'  },
+      'c-email':   { required: true,  type: 'email' },
+      'c-subject': { required: true,  type: 'text'  },
+      'c-msg':     { required: true,  type: 'text'  }
+    };
+
+    function showError(id, message) {
+      const input = document.getElementById(id);
+      const err = document.getElementById(id + '-err');
+      if (input) input.style.borderColor = '#dc3545';
+      if (err) {
+        err.textContent = message;
+        err.classList.add('show');
+      }
+    }
+
+    function clearError(id) {
+      const input = document.getElementById(id);
+      const err = document.getElementById(id + '-err');
+      if (input) input.style.borderColor = '';
+      if (err) {
+        err.textContent = '';
+        err.classList.remove('show');
+      }
+    }
+
+    function isValidEmail(value) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    }
+
+    function validateField(id) {
+      const rules = fields[id];
+      const input = document.getElementById(id);
+      const value = input.value.trim();
+
+      if (rules.required && value === '') {
+        showError(id, 'This field is required.');
+        return false;
+      }
+
+      if (rules.type === 'email' && !isValidEmail(value)) {
+        showError(id, 'Please enter a valid email address.');
+        return false;
+      }
+
+      clearError(id);
+      return true;
+    }
+
+    Object.keys(fields).forEach(function (id) {
+      const input = document.getElementById(id);
+      if (!input) return;
+      input.addEventListener('blur', function () { validateField(id); });
+      input.addEventListener('input', function () { clearError(id); });
+    });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+      Object.keys(fields).forEach(function (id) {
+        if (!validateField(id)) isValid = false;
+      });
+
+      if (!isValid) return;
+
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = '✅ Your message has been sent successfully!';
+      document.body.appendChild(toast);
+
+      requestAnimationFrame(function () {
+        toast.classList.add('show');
+      });
+
+      setTimeout(function () {
+        toast.classList.remove('show');
+        setTimeout(function () { toast.remove(); }, 350);
+      }, 3000);
+
+      form.reset();
+      Object.keys(fields).forEach(clearError);
     });
   });
 </script>
