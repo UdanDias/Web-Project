@@ -1369,6 +1369,73 @@ body {
 }
 /* --- About Us Section Styles --- */
 .about-section-wrapper {
+  background-image: url('../img/back11.png');
+  padding: 60px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  clear: both;
+  font-family: 'Georgia';
+}
+
+.about-central-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-content-box {
+  background-image: url('../img/back11.png');
+  border: 1px solid #e2d9c8;
+  border-radius: 8px;
+  padding: 45px 50px;
+  max-width: 900px; /* Centers the text box elegantly on the page */
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-mini-badge {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d94532;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-family: 'Georgia';
+}
+
+.about-main-title {
+  font-size: 32px;
+  color: #5c1d24; /* Matches the classic burgundy headings */
+  margin-bottom: 20px;
+  font-family: 'Georgia';
+}
+
+.about-paragraph {
+  font-size: 16px;
+  color: #2c2520;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-family: 'Georgia';
+  text-align: justify; /* Keeps paragraphs structured neatly */
+}
+
+/* Removes margins on the last paragraph */
+.about-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Small screen mobile fixes */
+@media (max-width: 768px) {
+  .about-content-box {
+    padding: 30px 20px;
+  }
+  .about-paragraph {
+    text-align: left;
+  }
+}
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
