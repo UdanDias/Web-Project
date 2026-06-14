@@ -1447,9 +1447,7 @@ body {
   box-sizing: border-box;
 }
 
-.about-content-box {
-  background-color: #ffffff; /* Gives it a crisp white card effect just like the book cards */
-  border: 1px solid #e2d9c8;
+.about-content-box { /* Gives it a crisp white card effect just like the book cards */
   border-radius: 8px;
   padding: 45px 50px;
   max-width: 900px; /* Centers the text box elegantly on the page */
