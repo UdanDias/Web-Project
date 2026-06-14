@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,43 @@
     <link rel="stylesheet" href="../css/stylecontact.css">
     <link rel="stylesheet" href="../css/my-account.css">
 </head>
+
 <body>
-<nav class="nav-container">
-    <div class="logo" style="padding-left: 15px; ">
-        <img src="../img/logo4.png" alt="logo">
-    </div>
-    <div class="nav-item-container">
-        <ul class="nav-items">
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="Books.html">Books</a></li>
-            <li><a href="Membership.html">Membership</a></li>
-            <li><a href="my-account.html">My Account</a></li>
-            <li><a href="Contact us.html">Contact Us</a></li>
-            <li><a href="../AI/library/books.html">AI books</a></li>
-        </ul>
-    </div>
-    <div >
-        <ul class="log" style="padding-right: 15px;">
-            <li><a href="Membership.html"><button type="button" class="btn btn-outline-light" style="font-size: 20px;">Join Us</button></a></li>
-            <!-- <li><a href="register.html">Register</a></li> -->
 
-        </ul>
-    </div>
-</nav>
 
+    <nav class="nav-container">
+        <div class="logo" style="padding-left: 15px; ">
+            <img src="../img/logo4.png" alt="logo">
+        </div>
+
+        <div class="nav-item-container">
+            <ul class="nav-items">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Books.html">Books</a></li>
+                <li><a href="Membership.html">Membership</a></li>
+                <li><a href="my-account.html">My Account</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+                <li><a href="../AI/library/books.html">AI books</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="log" style="padding-right: 15px;">
+                <li><a href="Membership.html"><button type="button" class="btn btn-outline-light"
+                            style="font-size: 20px;">Join Us</button></a></li>
+                <!-- <li><a href="register.html">Register</a></li> -->
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
     <div class="hero-section">
         <span class="browse-badge">Your Library Space</span>
         <h2>MY ACCOUNT</h2>
         <div class="hero-subtitle">Manage your borrowed books, reservations, and profile</div>
     </div>
 
+    <!-- Side bar -->
     <div class="wrapper">
         <nav class="account-sidebar">
             <div class="sidebar-nav">
@@ -49,7 +57,10 @@
             </div>
         </nav>
 
+        <!-- Content Area -->
         <div class="account">
+
+            <!-- Borrowed books -->
             <div class="content-card account-panel" id="panel-borrowed">
                 <div class="card-header">
                     <h3>📖 Currently Borrowed</h3>
@@ -206,12 +217,14 @@
             <div class="content-card account-panel" id="panel-history" style="display:none;">
                 <div class="card-header">
                     <h3>📜 Reading History</h3>
-                    <button id="toggle-history" class="renew" style="font-size:.8rem; padding:6px 14px;">Hide History</button>
+                    <button id="toggle-history" class="renew" style="font-size:.8rem; padding:6px 14px;">Hide
+                        History</button>
                 </div>
                 <div class="card-body" id="reading-history" style="padding:0;">
                     <div class="accordion-item">
                         <button class="accordion-header open" type="button">
-                            📅 May 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">3 books</span>
+                            📅 May 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">3
+                                books</span>
                             <span class="accordion-arrow">▼</span>
                         </button>
                         <div class="accordion-body open">
@@ -248,7 +261,8 @@
 
                     <div class="accordion-item">
                         <button class="accordion-header" type="button">
-                            📅 April 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">4 books</span>
+                            📅 April 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">4
+                                books</span>
                             <span class="accordion-arrow">▼</span>
                         </button>
                         <div class="accordion-body">
@@ -291,7 +305,8 @@
 
                     <div class="accordion-item">
                         <button class="accordion-header" type="button">
-                            📅 March 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">5 books</span>
+                            📅 March 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">5
+                                books</span>
                             <span class="accordion-arrow">▼</span>
                         </button>
                         <div class="accordion-body">
@@ -340,7 +355,8 @@
 
                     <div class="accordion-item">
                         <button class="accordion-header" type="button">
-                            📅 February 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">3 books</span>
+                            📅 February 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">3
+                                books</span>
                             <span class="accordion-arrow">▼</span>
                         </button>
                         <div class="accordion-body">
@@ -377,7 +393,8 @@
 
                     <div class="accordion-item">
                         <button class="accordion-header" type="button">
-                            📅 January 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">2 books</span>
+                            📅 January 2026 &nbsp;<span style="font-weight:400; color:#6c757d; font-size:.8rem;">2
+                                books</span>
                             <span class="accordion-arrow">▼</span>
                         </button>
                         <div class="accordion-body">
@@ -492,122 +509,113 @@
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-<div class="footer-wrapper">
-    <footer class="footer-container">
-        <div class="logo-container">
-            <div class="name">
-                <p><span class="L">L</span>i<span class="B">B</span>ero </p>
-            </div>
+    <div class="footer-wrapper">
+        <footer class="footer-container">
+            <div class="logo-container">
+                <div class="name">
+                    <p><span class="L">L</span>i<span class="B">B</span>ero </p>
+                </div>
 
-        </div>
-        <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul class="quick-links-list">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Books.html">Books</a></li>
-                <li><a href="Membership.html">Membership</a></li>
-                <li><a href="my-account.html">My Account</a></li>
-                <li><a href="Contact us.html">Contact Us</a></li>
-            </ul>
+        </footer>
+    </div>
 
-        </div>
-        <div class="cat-container">
-            <h3>Categories</h3>
-            <ul>
-                <li>Fiction & Litereature</li>
-                <li>Science & Technology</li>
-                <li>History & Politics</li>
-                <li>Children's Books</li>
-                <li>Academic Journals</li>
-            </ul>
-        </div>
-        <div class="contact-footer">
-            <h3>
-                Contact Us
-            </h3>
-            <ul>
-                <li>Kandy,Colombo road,<br>Peliyagoda,Sri Lanka</li>
-                <li>libero@gmail.com</li>
-                <li>071 678 7543</li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <hr>
-            <p>&copy; 2026 LiBero. All rights reserved.</p>
-        </div>
+    </div>
+    <div class="cat-container">
+        <h3>Categories</h3>
+        <ul>
+            <li>Fiction & Litereature</li>
+            <li>Science & Technology</li>
+            <li>History & Politics</li>
+            <li>Children's Books</li>
+            <li>Academic Journals</li>
+        </ul>
+    </div>
+    <div class="contact-footer">
+        <h3>
+            Contact Us
+        </h3>
+        <ul>
+            <li>Kandy,Colombo road,<br>Peliyagoda,Sri Lanka</li>
+            <li>libero@gmail.com</li>
+            <li>071 678 7543</li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <hr>
+        <p>&copy; 2026 LiBero. All rights reserved.</p>
+    </div>
 
-    </footer>
-</div>
+    <script>
 
-<script>
-    // Sidebar panel switching
-    const sidebarLinks = document.querySelectorAll('.sidebar-nav a[data-target]');
-    const panels = document.querySelectorAll('.account-panel');
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a[data-target]');
+        const panels = document.querySelectorAll('.account-panel');
 
-    sidebarLinks.forEach(function (link) {
-        link.addEventListener('click', function (e) {
+        sidebarLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = link.getAttribute('data-target');
+
+                sidebarLinks.forEach(function (item) { item.classList.remove('active'); });
+                link.classList.add('active');
+
+                panels.forEach(function (panel) { panel.style.display = 'none'; });
+                document.getElementById(target).style.display = 'block';
+            });
+        });
+
+        // Reading history accordion
+        document.querySelectorAll('.accordion-header').forEach(function (header) {
+            header.addEventListener('click', function () {
+                const isOpen = header.classList.contains('open');
+
+                document.querySelectorAll('.accordion-header').forEach(function (h) {
+                    h.classList.remove('open');
+                });
+                document.querySelectorAll('.accordion-body').forEach(function (body) {
+                    body.classList.remove('open');
+                });
+
+                if (!isOpen) {
+                    header.classList.add('open');
+                    header.nextElementSibling.classList.add('open');
+                }
+            });
+        });
+
+        // Show / hide reading history
+        const toggleHistoryBtn = document.getElementById('toggle-history');
+        const readingHistory = document.getElementById('reading-history');
+
+        toggleHistoryBtn.addEventListener('click', function () {
+            const isHidden = readingHistory.style.display === 'none';
+            readingHistory.style.display = isHidden ? 'block' : 'none';
+            toggleHistoryBtn.textContent = isHidden ? 'Hide History' : 'Show History';
+        });
+
+        // Simple toast message (frontend only)
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+            setTimeout(function () { toast.classList.remove('show'); }, 2500);
+        }
+
+        document.getElementById('profile-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            const target = link.getAttribute('data-target');
-
-            sidebarLinks.forEach(function (item) { item.classList.remove('active'); });
-            link.classList.add('active');
-
-            panels.forEach(function (panel) { panel.style.display = 'none'; });
-            document.getElementById(target).style.display = 'block';
+            showToast('Profile updated successfully!');
         });
-    });
 
-    // Reading history accordion
-    document.querySelectorAll('.accordion-header').forEach(function (header) {
-        header.addEventListener('click', function () {
-            const isOpen = header.classList.contains('open');
+        document.getElementById('save-settings').addEventListener('click', function () {
+            showToast('Settings saved!');
+        });
 
-            document.querySelectorAll('.accordion-header').forEach(function (h) {
-                h.classList.remove('open');
+        document.querySelectorAll('.cancel-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                showToast('Reservation cancelled.');
             });
-            document.querySelectorAll('.accordion-body').forEach(function (body) {
-                body.classList.remove('open');
-            });
-
-            if (!isOpen) {
-                header.classList.add('open');
-                header.nextElementSibling.classList.add('open');
-            }
         });
-    });
+    </script>
 
-    // Show / hide reading history
-    const toggleHistoryBtn = document.getElementById('toggle-history');
-    const readingHistory = document.getElementById('reading-history');
-
-    toggleHistoryBtn.addEventListener('click', function () {
-        const isHidden = readingHistory.style.display === 'none';
-        readingHistory.style.display = isHidden ? 'block' : 'none';
-        toggleHistoryBtn.textContent = isHidden ? 'Hide History' : 'Show History';
-    });
-
-    // Simple toast message (frontend only)
-    function showToast(message) {
-        const toast = document.getElementById('toast');
-        toast.textContent = message;
-        toast.classList.add('show');
-        setTimeout(function () { toast.classList.remove('show'); }, 2500);
-    }
-
-    document.getElementById('profile-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        showToast('Profile updated successfully!');
-    });
-
-    document.getElementById('save-settings').addEventListener('click', function () {
-        showToast('Settings saved!');
-    });
-
-    document.querySelectorAll('.cancel-btn').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            showToast('Reservation cancelled.');
-        });
-    });
-</script>
 </body>
+
 </html>
