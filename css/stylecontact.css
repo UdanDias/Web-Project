@@ -419,14 +419,7 @@ a {
   max-width: 1160px;  
 }
 
-.section-alt {
-  background: transparent; 
-  display: flex;
-  justify-content: center;
-}
-
-.section.section-alt {
-  margin-top: 40px;    
+   
 
 /* Success toast */
 .toast {
