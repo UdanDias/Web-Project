@@ -802,11 +802,10 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     border-bottom: 2px solid rgba(255, 255, 255, 0.463);
     padding: 6px;
     width: fit-content;
-    margin: 0 auto;     
+    margin: 0 auto;      /* centers the h3 block itself */
     text-align: center;
     font-size: 20px;
 }
-
 
 .cat-container h3 {
     border-bottom: 2px solid rgba(255, 255, 255, 0.463);
@@ -835,15 +834,6 @@ background: linear-gradient(135deg, #7ebae5, #1a4974, #a8c9e8);
     text-align: center;
     line-height: 2;
 
-}
-.quick-links-list a {
-    color: #d9d9d9;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.quick-links-list a:hover {
-    color: #fab639; 
 }
 .footer-bottom {
     grid-column: 1 / -1;   
@@ -1053,17 +1043,13 @@ body {
 }
 
 .main-title {
-  font-size: 50px;
-  /* color: #4d3105e7!important;  */
-  color: #5c1d24;
+  font-size: 36px;
+  color: #5c1d24; 
   letter-spacing: 3px;
-  /* border-bottom: 2px solid #2a1d5ce2; */
+  border-bottom: 2px solid #dfcbb5;
   display: inline-block;
   padding-bottom: 5px;
-  font-weight: 800;
 }
-
-
 
 .description-text {
   font-size: 15px;
@@ -1182,7 +1168,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   clear: both; 
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
 
   background-size: cover;          
   background-position: center;     
@@ -1203,43 +1189,42 @@ body {
 .arrival-label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #07205ec8!important;
+  color:  #ffffff;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
 }
 
 .arrival-title {
-  font-size: 50px!important;
-  color: #efefef!important;
+  font-size: 36px;
+  color:  #ffffff;
   margin-bottom: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
 }
 
 .arrival-sub {
   font-size: 19px;
-  color:  #f2f2f5dd!important;
-  font-family: 'Inter', sans-serif;
+  color:  #ffffff;
+  font-family: 'Georgia';
 }
 
-/* Flexbox container for perfect side-by-side spacing without squishing */
 .books-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px; /* Even spacing between your cards */
+  gap: 24px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-/* Stretched, clean book cards */
+
 .book-card {
-  background-color: #ffffff; /* Flipped to white so cards pop out beautifully against the page background */
+  background-color: #ffffff;
   border: 1px solid #e2d9c8;
-  width: 200px; /* Fixed robust horizontal width */
+  width: 200px;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
@@ -1254,9 +1239,9 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Colored placeholder layout */
+
 .book-cover {
-  height: 180px; /* Healthy vertical height ratio */
+  height: 180px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1265,14 +1250,13 @@ body {
   position: relative;
 }
 
-/* Cover Background variations */
+/
 .color-1 { background-color: #e3edf7; }
 .color-2 { background-color: #f3e5f5; }
 .color-3 { background-color: #e8f5e9; }
 .color-4 { background-color: #ffebee; }
 .color-5 { background-color: #fff3e0; }
 
-/* Fixed Status Badge styles */
 .badge {
   position: absolute;
   top: 12px;
@@ -1281,28 +1265,25 @@ body {
   padding: 4px 10px;
   border-radius: 4px;
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
   font-weight: bold;
 }
 
 .status-available { background-color: #2d4a43; }
 .status-borrowed { background-color: #d94532; }
 
-/* Book details wrapper */
 .book-info {
   padding: 15px 12px 5px 12px;
   box-sizing: border-box;
 }
-
-/* Title formatting fixing text clipping/thin columns */
 .book-info h4 {
   font-size: 16px;
   color: #2c2520;
   margin: 0 0 6px 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
   font-weight: bold;
   line-height: 1.4;
-  white-space: normal; /* Permits clean text wrapping */
+  white-space: normal;
   overflow: visible;
 }
 
@@ -1310,7 +1291,8 @@ body {
   font-size: 13px;
   color: #7c6e61;
   margin: 0 0 12px 0;
-  font-family: 'Inter', sans-serif;}
+  font-family: 'Georgia';
+}
 
 .genre-tag {
   display: inline-block;
@@ -1319,10 +1301,8 @@ body {
   color: #4a3f35;
   padding: 3px 10px;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
 }
-
-/* Section footer button elements */
 .arrivals-footer {
   text-align: center;
   margin-top: 40px;
@@ -1337,7 +1317,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   font-size: 15px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
   transition: background-color 0.2s ease;
 }
 
@@ -1380,12 +1360,9 @@ body {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.722);
 }
-/* ==========================================================================
-   GLOBAL SETTING
-   ========================================================================== */
 .new-arrivals-section,
 .about-section-wrapper {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia';
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -1399,9 +1376,6 @@ body {
   box-sizing: border-box;
 }
 
-/* ==========================================================================
-   TYPOGRAPHY & HEADINGS
-   ========================================================================== */
 .arrivals-header,
 .about-content-box {
   text-align: center;
@@ -1434,9 +1408,6 @@ body {
   color: #7c6e61;
 }
 
-/* ==========================================================================
-   NEW ARRIVALS GRID & CARDS
-   ========================================================================== */
 .books-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1462,7 +1433,6 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* Covers & Backgrounds */
 .book-cover {
   height: 180px;
   width: 100%;
@@ -1479,7 +1449,6 @@ body {
 .color-4 { background-color: #ffebee; }
 .color-5 { background-color: #fff3e0; }
 
-/* Status Badges */
 .badge {
   position: absolute;
   top: 12px;
@@ -1522,10 +1491,6 @@ body {
   padding: 3px 10px;
   border-radius: 4px;
 }
-
-/* ==========================================================================
-   ABOUT US BOX
-   ========================================================================== */
 .about-content-box {
   background-color: #ffffff;
   border: 1px solid #e2d9c8;
@@ -1536,7 +1501,6 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 75px;
 }
 
 .about-content-box:hover {
@@ -1560,9 +1524,6 @@ body {
   margin-bottom: 0;
 }
 
-/* ==========================================================================
-   FOOTER VIEW ALL BUTTON
-   ========================================================================== */
 .arrivals-footer {
   text-align: center;
   margin-top: 40px;
@@ -1584,9 +1545,6 @@ body {
   background-color: #1e332e;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MOBILE FIXES)
-   ========================================================================== */
 @media (max-width: 768px) {
   .about-content-box {
     padding: 30px 20px;
@@ -1595,4 +1553,21 @@ body {
     text-align: left;
   }
 }
+/*DATE & TIME DISPLAY STYLES */
+.datetime-display-box {
+  font-family: 'Georgia';
+  color: #7c6e61; /* Matches your vintage subtitle text color */
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fcfaf2;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
 
+.datetime-separator {
+  color: #e2d9c8;
+  margin: 0 10px;
+  font-weight: bold;
+}
