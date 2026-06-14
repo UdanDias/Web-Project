@@ -410,6 +410,10 @@ a {
   color: var(--navy);
 }
 
+.section-alt {
+  width: 100%;
+}
+
 
 
 /* Success toast */
