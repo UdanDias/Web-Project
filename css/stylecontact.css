@@ -1043,13 +1043,17 @@ body {
 }
 
 .main-title {
-  font-size: 36px;
-  color: #5c1d24; 
+  font-size: 50px;
+  /* color: #4d3105e7!important;  */
+  color: #5c1d24;
   letter-spacing: 3px;
-  border-bottom: 2px solid #dfcbb5;
+  /* border-bottom: 2px solid #2a1d5ce2; */
   display: inline-block;
   padding-bottom: 5px;
+  font-weight: 800;
 }
+
+
 
 .description-text {
   font-size: 15px;
@@ -1189,7 +1193,7 @@ body {
 .arrival-label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #efefef9e!important;
+  color: #07205ec8!important;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 6px;
@@ -1197,16 +1201,16 @@ body {
 }
 
 .arrival-title {
-  font-size: 36px;
+  font-size: 50px!important;
   color: #efefef!important;
   margin-bottom: 8px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 .arrival-sub {
   font-size: 19px;
-  color:  #ffffff;
-  font-family: 'Georgia';
+  color:  #f2f2f5dd!important;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Flexbox container for perfect side-by-side spacing without squishing */
@@ -1267,7 +1271,7 @@ body {
   padding: 4px 10px;
   border-radius: 4px;
   color: #ffffff;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
 }
 
@@ -1285,7 +1289,7 @@ body {
   font-size: 16px;
   color: #2c2520;
   margin: 0 0 6px 0;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   line-height: 1.4;
   white-space: normal; /* Permits clean text wrapping */
@@ -1296,8 +1300,7 @@ body {
   font-size: 13px;
   color: #7c6e61;
   margin: 0 0 12px 0;
-  font-family: 'Georgia';
-}
+  font-family: 'Inter', sans-serif;}
 
 .genre-tag {
   display: inline-block;
@@ -1306,7 +1309,7 @@ body {
   color: #4a3f35;
   padding: 3px 10px;
   border-radius: 4px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 /* Section footer button elements */
@@ -1324,7 +1327,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   font-size: 15px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   transition: background-color 0.2s ease;
 }
 
@@ -1372,7 +1375,7 @@ body {
    ========================================================================== */
 .new-arrivals-section,
 .about-section-wrapper {
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -1523,6 +1526,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 75px;
 }
 
 .about-content-box:hover {
