@@ -416,7 +416,7 @@ a {
   border-radius: 12px;
   padding: 40px;
   box-shadow: var(--shadow);
-  max-width: 800px;  
+  max-width: 1160px;  
 }
 
 .section-alt {
@@ -425,6 +425,8 @@ a {
   justify-content: center;
 }
 
+.section.section-alt {
+  margin-top: 40px;    
 
 /* Success toast */
 .toast {
