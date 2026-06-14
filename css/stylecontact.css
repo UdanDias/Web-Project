@@ -1168,7 +1168,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   clear: both; 
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 
   background-size: cover;          
   background-position: center;     
@@ -1189,16 +1189,16 @@ body {
 .arrival-label {
   font-size: 16px;
   text-transform: uppercase;
-  color: #efefef;;
+  color: #efefef9e!important;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 6px;
-  font-family: 'Georgia';
+  font-family: 'Inter', sans-serif;
 }
 
 .arrival-title {
   font-size: 36px;
-  color: #efefef;;
+  color: #efefef!important;
   margin-bottom: 8px;
   font-family: 'Georgia';
 }
