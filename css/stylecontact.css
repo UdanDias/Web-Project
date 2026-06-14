@@ -314,6 +314,10 @@ a { color: inherit; text-decoration: none; }
 .hours-table tr:hover { background-color: #f7fafc; }
 .hours-table td:first-child { font-weight: 600; color: var(--navy); }
 
+.section-alt {
+  width: 100%;
+}
+
 
 
 /* Success toast */
