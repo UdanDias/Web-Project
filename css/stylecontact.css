@@ -416,8 +416,12 @@ a {
   border-radius: 12px;
   padding: 40px;
   box-shadow: var(--shadow);
-  max-width: 1160px;  
+  max-width: none;  
 }
+.section.section-alt {
+  margin-top: 40px;      
+}
+
 
    
 
