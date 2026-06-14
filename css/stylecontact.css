@@ -1369,7 +1369,6 @@ body {
 }
 /* --- About Us Section Styles --- */
 .about-section-wrapper {
-  background-image: url('../img/back11.png');
   padding: 60px 20px;
   width: 100%;
   box-sizing: border-box;
@@ -1384,7 +1383,6 @@ body {
 }
 
 .about-content-box {
-  background-image: url('../img/back11.png');
   border: 1px solid #e2d9c8;
   border-radius: 8px;
   padding: 45px 50px;
@@ -1399,7 +1397,7 @@ body {
   display: inline-block;
   font-size: 12px;
   text-transform: uppercase;
-  color: #d94532;
+  color: #e2d9c8;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 8px;
@@ -1408,14 +1406,14 @@ body {
 
 .about-main-title {
   font-size: 32px;
-  color: #5c1d24; /* Matches the classic burgundy headings */
+  color:#e2d9c8; /* Matches the classic burgundy headings */
   margin-bottom: 20px;
   font-family: 'Georgia';
 }
 
 .about-paragraph {
   font-size: 16px;
-  color: #2c2520;
+  color:#e2d9c8;;
   line-height: 1.6;
   margin-bottom: 18px;
   font-family: 'Georgia';
@@ -1465,7 +1463,7 @@ body {
   display: inline-block;
   font-size: 12px;
   text-transform: uppercase;
-  color: #d94532;
+  color:#e2d9c8;;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 8px;
@@ -1474,14 +1472,14 @@ body {
 
 .about-main-title {
   font-size: 32px;
-  color: #5c1d24; /* Matches the classic burgundy headings */
+  color: ##e2d9c8;; /* Matches the classic burgundy headings */
   margin-bottom: 20px;
   font-family: 'Georgia';
 }
 
 .about-paragraph {
   font-size: 16px;
-  color: #2c2520;
+  color: #e2d9c8;;
   line-height: 1.6;
   margin-bottom: 18px;
   font-family: 'Georgia';
