@@ -410,16 +410,20 @@ a {
   color: var(--navy);
 }
 
-.container { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
-
 .section-alt .container {
   text-align: center;
   background: var(--white);
   border-radius: 12px;
-  padding: 40px 20px;
+  padding: 40px;
   box-shadow: var(--shadow);
+  max-width: 800px;  
 }
 
+.section-alt {
+  background: transparent; 
+  display: flex;
+  justify-content: center;
+}
 
 
 /* Success toast */
