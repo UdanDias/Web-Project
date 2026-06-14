@@ -1840,8 +1840,6 @@ body {
     text-align: left;
   }
 }
-<<<<<<< HEAD
-=======
 /*DATE & TIME DISPLAY STYLES */
 .datetime-display-box {
   font-family: 'Georgia';
@@ -2217,4 +2215,3 @@ body.account-page .toast.show {
     min-width: 100%;
   }
 }
->>>>>>> 4b404692c273e44fd4b982ffb70188a29a6836c1
