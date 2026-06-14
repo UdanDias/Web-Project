@@ -1553,6 +1553,26 @@ body {
     text-align: left;
   }
 }
+/* ==========================================================================
+   DATE & TIME DISPLAY STYLES
+   ========================================================================== */
+.datetime-display-box {
+  font-family: 'Georgia';
+  color: #7c6e61; /* Matches your vintage subtitle text color */
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #fcfaf2; /* Matches your vintage page background */
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+}
+
+.datetime-separator {
+  color: #e2d9c8; /* Matches your border accent lines */
+  margin: 0 10px;
+  font-weight: bold;
+}
 <<<<<<< HEAD
 =======
 /*DATE & TIME DISPLAY STYLES */
